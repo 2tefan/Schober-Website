@@ -1,3 +1,3 @@
-function myFunction() {
-    window.alert(213);
-}
+$(document).ready(function () {
+    $('#header').load("header.html");
+});
