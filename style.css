@@ -39,6 +39,9 @@ body {
 	background-color: rgba(255, 255, 255, 0.1);
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 120%;
 }
 
 #headline {
@@ -49,37 +52,19 @@ body {
 }
 
 footer p {
-	position: fixed;
 	color: white;
-	left: 40%;
-	width: 20%;
 	text-align: center;
 }
 
-#text {
-	padding-left: 10%;
-	padding-right: 10%;
-	font-size: 120%;
-}
-
-/* Style buttons */
-
-.download a {
-	text-decoration: none;
-	color: cadetblue
-}
-
-#downloadButton {
-	background-color: rgba(0, 162, 255, 0.5);
+.btn {
+	background-color: rgba(30, 143, 255, 0.514);
 	border: none;
 	color: white;
-	padding: 10px 20px;
+	padding: 12px 30px;
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 20px;
 }
 
-/* Darker background on mouse-over */
-
-#downloadButton:hover {
-	background-color: rgba(0, 162, 255, 0.8);
+.btn:hover {
+	background-color: rgba(30, 143, 255, 0.808);
 }
