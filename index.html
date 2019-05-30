@@ -6,6 +6,7 @@
 	<link rel="icon" href="src/favicon.png">
 	<meta charset="utf-8">
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	<meta name="theme-color" content="#4285f4" />
 	<script src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -15,14 +16,33 @@
 
 <body>
 	<div id="header"></div>
-	<div id="wrapper">
-		<div id="text">
-			<h1>Startseite</h1>
-			<p>
-				Hallo und willkommen auf meiner Website! </br>
-				Hier kannst du meine Spiele unter Downloads herunterladen.</br>
-			</p>
-		</div>
+	<div class="text" id="introduction">
+		<h1>Startseite</h1>
+		<p>
+			Hallo und willkommen auf meiner Website! </br>
+			Hier kannst du meine Spiele unter Downloads herunterladen.</br>
+		</p>
+	</div>
+
+	<div class="text" id="discordserver">
+		<h1>Der Discord-Server</h1>
+		<iframe src="https://discordapp.com/widget?id=557631195819671562&theme=dark" width="350" height="500"
+			allowtransparency="true" frameborder="0"></iframe>
+		<p>
+			Hier kannst du dem Server beitreten <a href="https://discord.gg/zNKuN3J">https://discord.gg/zNKuN3J</a>
+		</p>
+	</div>
+
+	<div class="text" id="steam">
+		<h1>Mein Steam Profil</h1>
+		<img src="src/steam.png">
+		<p>Das ist mein Steam Profil :)</p>
+	</div>
+
+	<div class="text" id="github">
+		<h1>Mein Github Profil</h1>
+		<img src="src/github.png">
+		<p>Ja, ich benutze auch Github. Hier ist mein Profil.</p>
 	</div>
 	<div id="footer"></div>
 </body>

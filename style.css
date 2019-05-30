@@ -1,19 +1,17 @@
 body {
-	background: url(src/bg.jpg);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Oswald', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 120%;
 }
 
 .navbar {
 	overflow: hidden;
-	padding: 10px;
+	padding: 14px;
 	border: solid;
-	border-color: rgba(0, 0, 0, 0.8);
-	background-color: rgba(39, 39, 39, 0.8);
+	border-color: rgba(0, 0, 0, 0.055);
+	background-color: rgba(255, 255, 255, 0);
 	list-style-type: none;
-	overflow: hidden;
-	position: sticky;
-	top: 0;
-	border-radius: 20px;
 }
 
 .navbar li {
@@ -22,9 +20,10 @@ body {
 
 .navbar li a {
 	font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
-	color: rgb(255, 255, 255);
+	font-size: 1em;
+	color: rgb(0, 0, 0);
 	text-align: center;
-	padding: 14px 16px;
+	padding: 100px;
 	text-decoration: none;
 	border-style: dashed;
 	border-color: rgba(0, 0, 0, 0);
@@ -35,13 +34,13 @@ body {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+ul {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
 #wrapper {
 	background-color: rgba(255, 255, 255, 0.1);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10%;
-	padding-right: 10%;
-	font-size: 120%;
 }
 
 #headline {
@@ -52,6 +51,9 @@ body {
 }
 
 footer p {
+	margin: 0;
+	padding: 1cm;
+	background-color: #21618C;
 	color: white;
 	text-align: center;
 }
@@ -67,4 +69,73 @@ footer p {
 
 .btn:hover {
 	background-color: rgba(30, 143, 255, 0.808);
+}
+
+h1 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.text {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+a {
+	text-decoration: none;
+}
+
+#introduction {
+	background-color: #82E0AA;
+}
+
+#discordserver {
+	text-align: center;
+	background-color: #5DADE2;
+}
+
+#steam {
+	background-color: #73C6B6;
+	overflow: hidden;
+}
+
+#steam p {
+	display: block;
+	margin-left: 15px;
+}
+
+#steam img {
+	float: left;
+	margin-right: 15px;
+}
+
+img {
+	max-width: 120px;
+}
+
+#github {
+	background-color: #5499C7;
+	overflow: hidden;
+}
+
+#github p {
+	display: block;
+	margin-right: 15px;
+}
+
+#github img {
+	float: right;
+	margin-left: 15px;
+}
+
+#downloads {
+	background-color: #5499C7;
+}
+
+#agb {
+	background-color: #AED6F1;
 }
