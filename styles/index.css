@@ -1,0 +1,15 @@
+#introduction {
+  background-color: #82E0AA;
+}
+
+#discordIframe {
+  height: 500px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #discordIframe {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=index.css.map */

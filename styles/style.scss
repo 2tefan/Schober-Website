@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: 'Oswald', sans-serif;
 	padding: 0;
@@ -40,10 +42,6 @@ body {
 	color: rgb(0, 27, 148);
 }
 
-#wrapper {
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
 #headline {
 	text-align: center;
 	margin-left: auto;
@@ -57,19 +55,6 @@ footer p {
 	background-color: #21618C;
 	color: white;
 	text-align: center;
-}
-
-.btn {
-	background-color: rgba(30, 143, 255, 0.514);
-	border: none;
-	color: white;
-	padding: 12px 30px;
-	cursor: pointer;
-	font-size: 20px;
-}
-
-.btn:hover {
-	background-color: rgba(30, 143, 255, 0.808);
 }
 
 h1 {
@@ -91,21 +76,10 @@ a {
 	text-decoration: none;
 }
 
-#introduction {
-	background-color: #82E0AA;
-}
 img {
 	max-width: 120px;
 }
 
 .links p {
 	display: block;
-}
-
-#downloads {
-	
-}
-
-#agb {
-	background-color: #82E0AA;
 }

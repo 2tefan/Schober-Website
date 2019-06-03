@@ -1,0 +1,20 @@
+.btn {
+  background-color: rgba(30, 143, 255, 0.514);
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px 30px;
+}
+
+.btn:hover {
+  background-color: rgba(30, 143, 255, 0.808);
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=downloads.css.map */

@@ -1,0 +1,17 @@
+@import "../utilities/variables.scss";
+
+#introduction {
+    background-color: #82E0AA;
+}
+
+#discordIframe {
+    height: 500px;
+    width: 100%;
+}
+
+@media (min-width: $min-width) {
+
+    #discordIframe {
+        width: auto;
+    }
+}
