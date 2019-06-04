@@ -16,7 +16,7 @@ body {
   font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 33.33%;
+  width: calc(100% / 3);
   padding: 5px;
   float: left;
   color: black;
@@ -29,6 +29,7 @@ body {
   text-align: center;
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
+  height: 33px;
 }
 
 .navbar a:hover {
@@ -42,7 +43,20 @@ body {
   color: #001b94;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main {
+  padding-top: 29px;
+}
+
 #headline {
+  height: 124px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

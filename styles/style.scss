@@ -1,4 +1,5 @@
-
+$header-height: 124px;
+$navbar-height: 33px;
 
 body {
 	font-family: 'Oswald', sans-serif;
@@ -17,32 +18,45 @@ body {
 .navbar a {
 	font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
-	width: 33.33%;
+	width: calc(100% / 3);
 	padding: 5px;
 	float: left;
 	color: black;
 	border-style: dotted;
 	border-color: rgba(0, 0, 0, 0);
 	border-top: 0px;
-	border-bottom: 0px; 
+	border-bottom: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
 	text-align: center;
 	transition: background-color 0.5s ease;
+	height: $navbar-height;
 }
+
 .navbar a:hover {
 	border-color: rgba(0, 0, 0, 0.055);
 	background-color: rgba(0, 0, 0, 0.164);
 }
 
-.navbar a:active
-{
+.navbar a:active {
 	border-color: rgba(0, 0, 0, 0.199);
 	background-color: rgba(0, 0, 0, 0.342);
 	color: rgb(0, 27, 148);
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .main {
+	padding-top: ($header-height/2)-$navbar-height;
+  }
+
 #headline {
+	height: $header-height;
+	box-sizing: border-box;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
