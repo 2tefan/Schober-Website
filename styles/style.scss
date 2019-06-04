@@ -16,6 +16,7 @@ body {
 }
 
 .navbar a {
+	height: $navbar-height;
 	font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 	width: calc(100% / 3);
@@ -30,7 +31,6 @@ body {
 	padding-right: 0px;
 	text-align: center;
 	transition: background-color 0.5s ease;
-	height: $navbar-height;
 }
 
 .navbar a:hover {
@@ -51,7 +51,7 @@ body {
 }
 
 .sticky + .main {
-	padding-top: ($header-height/2)-$navbar-height;
+	padding-top: $navbar-height;
   }
 
 #headline {

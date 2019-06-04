@@ -13,6 +13,7 @@ body {
 }
 
 .navbar a {
+  height: 33px;
   font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -29,7 +30,6 @@ body {
   text-align: center;
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
-  height: 33px;
 }
 
 .navbar a:hover {
@@ -50,7 +50,7 @@ body {
 }
 
 .sticky + .main {
-  padding-top: 29px;
+  padding-top: 33px;
 }
 
 #headline {
