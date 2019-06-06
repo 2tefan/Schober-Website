@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.bildNebenText {
+  padding-top: 20px;
+}
+
 @media (min-width: 1024px) {
   #discordIframe {
     width: auto;
