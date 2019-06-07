@@ -12,6 +12,22 @@
   background-color: rgba(30, 143, 255, 0.808);
 }
 
+#infomations {
+  background-color: #A3E4D7;
+}
+
+#androidApps {
+  background-color: #5499C7;
+}
+
+#javaPrograms {
+  background-color: #C39BD3;
+}
+
+#arduino {
+  background-color: #F7DC6F;
+}
+
 @media (min-width: 1024px) {
   .btn {
     width: auto;

@@ -1,21 +1,41 @@
 @import "../utilities/variables.scss";
+$colorInfos: #A3E4D7;
+$colorAndroidApps: #5499C7;
+$colorJavaPrograms: #C39BD3;
+$colorArduino: #F7DC6F;
 
 .btn {
-	background-color: rgba(30, 143, 255, 0.514);
-	border: none;
+    background-color: rgba(30, 143, 255, 0.514);
+    border: none;
     color: white;
     width: 100%;
-	cursor: pointer;
-	font-size: 20px;
+    cursor: pointer;
+    font-size: 20px;
     padding: 12px 30px;
 }
 
 .btn:hover {
-	background-color: rgba(30, 143, 255, 0.808);
+    background-color: rgba(30, 143, 255, 0.808);
+}
+
+#infomations {
+    background-color: $colorInfos;
+}
+
+#androidApps {
+    background-color: $colorAndroidApps;
+}
+
+#javaPrograms {
+    background-color: $colorJavaPrograms;
+}
+
+#arduino {
+    background-color: $colorArduino;
 }
 
 @media (min-width: $min-width) {
     .btn {
         width: auto;
-    }    
+    }
 }

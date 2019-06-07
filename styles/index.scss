@@ -1,7 +1,18 @@
 @import "../utilities/variables.scss";
+$introductionColor: #82E0AA;
+$discordColor: #5DADE2;
+$steamColor: #F7DC6F;
+$githubColor: #5499C7;
+$color5: rgb(199, 191, 84);
 
 #introduction {
-    background-color: #82E0AA;
+    background-color: $introductionColor;
+}
+
+#discord
+{
+    text-align: center;
+    background-color: $discordColor;
 }
 
 #discordIframe {
@@ -9,9 +20,12 @@
     width: 100%;
 }
 
-.bildNebenText
-{
-    padding-top: 20px;
+#steam {
+    background-color: $steamColor;
+}
+
+#github {
+    background-color: $githubColor;
 }
 
 @media (min-width: $min-width) {

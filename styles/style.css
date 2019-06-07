@@ -53,6 +53,11 @@ body {
   padding-top: 33px;
 }
 
+main {
+  padding: 0;
+  margin: 0;
+}
+
 #headline {
   height: 124px;
   -webkit-box-sizing: border-box;
@@ -92,11 +97,38 @@ a {
   text-decoration: none;
 }
 
-img {
+.imgLeft,
+.imgRight {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 120px;
+  padding-top: 20px;
 }
 
-.links p {
-  display: block;
+.textRight,
+.textLeft {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .imgLeft {
+    float: left;
+  }
+  .imgRight {
+    float: right;
+  }
+  .imgLeft,
+  .imgRight {
+    margin-top: -75px;
+  }
+  .textRight {
+    margin-left: 135px;
+    text-align: right;
+  }
+  .textLeft {
+    margin-left: 15px;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */

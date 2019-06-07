@@ -1,12 +1,14 @@
+@import "../utilities/variables.scss";
 $header-height: 124px;
 $navbar-height: 33px;
+$img-size: 120px;
 
 body {
 	font-family: 'Oswald', sans-serif;
 	padding: 0;
 	margin: 0;
 	font-size: 120%;
-	background-color: #AED6F1;
+	background-color: $bodycolor;
 }
 
 .navbar {
@@ -50,9 +52,14 @@ body {
 	width: 100%;
 }
 
-.sticky + .main {
+.sticky+.main {
 	padding-top: $navbar-height;
-  }
+}
+
+main {
+	padding: 0;
+	margin: 0;
+}
 
 #headline {
 	height: $header-height;
@@ -66,7 +73,7 @@ body {
 footer p {
 	margin: 0;
 	padding: 1cm;
-	background-color: #21618C;
+	background-color: $colorfooter;
 	color: white;
 	text-align: center;
 }
@@ -90,10 +97,43 @@ a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 120px;
+.imgLeft,
+.imgRight {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $img-size;
+	padding-top: 20px;
 }
 
-.links p {
-	display: block;
+.textRight,
+.textLeft {
+	text-align: center;
+}
+
+
+@media (min-width: $min-width) {
+
+	.imgLeft {
+		float: left;
+	}
+
+	.imgRight {
+		float: right;
+	}
+
+	.imgLeft,
+	.imgRight {
+		margin-top: -75px;
+	}
+
+	.textRight {
+		margin-left: $img-size + 15px;
+		text-align: right;
+	}
+
+	.textLeft{
+		margin-left: 15px;
+		text-align: left;
+	}
 }

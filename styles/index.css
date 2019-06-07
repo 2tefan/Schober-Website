@@ -2,13 +2,22 @@
   background-color: #82E0AA;
 }
 
+#discord {
+  text-align: center;
+  background-color: #5DADE2;
+}
+
 #discordIframe {
   height: 500px;
   width: 100%;
 }
 
-.bildNebenText {
-  padding-top: 20px;
+#steam {
+  background-color: #F7DC6F;
+}
+
+#github {
+  background-color: #5499C7;
 }
 
 @media (min-width: 1024px) {
