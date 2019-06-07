@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    $("head").load("rsc/head.html");
     $('#header').load("rsc/header.html");
     $('#navbar').load("rsc/navbar.html");
     $('#footer').load("rsc/footer.html");

@@ -1,3 +1,71 @@
+#agb {
+  background-color: #82E0AA;
+}
+
+.btn {
+  background-color: rgba(30, 143, 255, 0.514);
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px 30px;
+}
+
+.btn:hover {
+  background-color: rgba(30, 143, 255, 0.808);
+}
+
+#infomations {
+  background-color: #A3E4D7;
+}
+
+#androidApps {
+  background-color: #5499C7;
+}
+
+#javaPrograms {
+  background-color: #C39BD3;
+}
+
+#arduino {
+  background-color: #F7DC6F;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    width: auto;
+  }
+}
+
+#introduction {
+  background-color: #82E0AA;
+}
+
+#discord {
+  text-align: center;
+  background-color: #5DADE2;
+}
+
+#discordIframe {
+  height: 500px;
+  width: 100%;
+}
+
+#steam {
+  background-color: #F7DC6F;
+}
+
+#github {
+  background-color: #5499C7;
+}
+
+@media (min-width: 1024px) {
+  #discordIframe {
+    width: auto;
+  }
+}
+
 body {
   font-family: 'Oswald', sans-serif;
   padding: 0;
@@ -114,21 +182,26 @@ a {
 @media (min-width: 1024px) {
   .imgLeft {
     float: left;
+    margin-left: 20%;
   }
   .imgRight {
     float: right;
+    margin-right: 20%;
   }
   .imgLeft,
   .imgRight {
     margin-top: -75px;
   }
   .textRight {
-    margin-left: 135px;
+    margin-right: 20%;
     text-align: right;
   }
   .textLeft {
-    margin-left: 15px;
+    margin-left: 20%;
     text-align: left;
+  }
+  .imgAndText p {
+    margin: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,9 @@
 @import "../utilities/variables.scss";
+@import "agb.scss";
+@import "downloads.scss";
+@import "index.scss";
+
+
 $header-height: 124px;
 $navbar-height: 33px;
 $img-size: 120px;
@@ -15,45 +20,45 @@ body {
 	overflow: hidden;
 	list-style-type: none;
 	background-color: rgb(255, 255, 255);
-}
 
-.navbar a {
-	height: $navbar-height;
-	font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
-	box-sizing: border-box;
-	width: calc(100% / 3);
-	padding: 5px;
-	float: left;
-	color: black;
-	border-style: dotted;
-	border-color: rgba(0, 0, 0, 0);
-	border-top: 0px;
-	border-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	text-align: center;
-	transition: background-color 0.5s ease;
-}
+	a {
+		height: $navbar-height;
+		font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
+		box-sizing: border-box;
+		width: calc(100% / 3);
+		padding: 5px;
+		float: left;
+		color: black;
+		border-style: dotted;
+		border-color: rgba(0, 0, 0, 0);
+		border-top: 0px;
+		border-bottom: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		text-align: center;
+		transition: background-color 0.5s ease;
 
-.navbar a:hover {
-	border-color: rgba(0, 0, 0, 0.055);
-	background-color: rgba(0, 0, 0, 0.164);
-}
+		&:hover {
+			border-color: rgba(0, 0, 0, 0.055);
+			background-color: rgba(0, 0, 0, 0.164);
+		}
 
-.navbar a:active {
-	border-color: rgba(0, 0, 0, 0.199);
-	background-color: rgba(0, 0, 0, 0.342);
-	color: rgb(0, 27, 148);
+		&:active {
+			border-color: rgba(0, 0, 0, 0.199);
+			background-color: rgba(0, 0, 0, 0.342);
+			color: rgb(0, 27, 148);
+		}
+	}
 }
 
 .sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
-}
 
-.sticky+.main {
-	padding-top: $navbar-height;
+	&+.main {
+		padding-top: $navbar-height;
+	}
 }
 
 main {
@@ -116,10 +121,12 @@ a {
 
 	.imgLeft {
 		float: left;
+		margin-left: 20%;
 	}
 
 	.imgRight {
 		float: right;
+		margin-right:  20%;
 	}
 
 	.imgLeft,
@@ -128,12 +135,16 @@ a {
 	}
 
 	.textRight {
-		margin-left: $img-size + 15px;
+		margin-right:  20%;
 		text-align: right;
 	}
 
-	.textLeft{
-		margin-left: 15px;
+	.textLeft {
+		margin-left: 20%;
 		text-align: left;
+	}
+
+	.imgAndText p{
+		margin: 100px;
 	}
 }
