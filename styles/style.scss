@@ -1,12 +1,13 @@
-@import "../utilities/variables.scss";
-@import "agb.scss";
-@import "downloads.scss";
-@import "index.scss";
-
-
 $header-height: 124px;
 $navbar-height: 33px;
 $img-size: 120px;
+$min-width: 1024px;
+
+$colorfooter: #21618C;
+$bodycolor: #AED6F1;
+
+$bottonColor: #5499C7;
+$bottonBorderColor: rgba(0, 0, 0, 0.281);
 
 body {
 	font-family: 'Oswald', sans-serif;
@@ -92,7 +93,7 @@ h1 {
 
 .text {
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	padding-left: 10%;
 	padding-right: 10%;
 	overflow: hidden;
@@ -102,49 +103,18 @@ a {
 	text-decoration: none;
 }
 
-.imgLeft,
-.imgRight {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: $img-size;
-	padding-top: 20px;
-}
+#returnToTop
+{
+	position: fixed;
+    width: 100%;
+    bottom: 5%;
+    right: 5%;
+    background-color: $bottonColor;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
 
-.textRight,
-.textLeft {
-	text-align: center;
-}
-
-
-@media (min-width: $min-width) {
-
-	.imgLeft {
-		float: left;
-		margin-left: 20%;
-	}
-
-	.imgRight {
-		float: right;
-		margin-right:  20%;
-	}
-
-	.imgLeft,
-	.imgRight {
-		margin-top: -75px;
-	}
-
-	.textRight {
-		margin-right:  20%;
-		text-align: right;
-	}
-
-	.textLeft {
-		margin-left: 20%;
-		text-align: left;
-	}
-
-	.imgAndText p{
-		margin: 100px;
-	}
+    border-style: dashed;
+    border-color: $bottonBorderColor;
 }

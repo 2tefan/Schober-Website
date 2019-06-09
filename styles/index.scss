@@ -1,4 +1,4 @@
-@import "../utilities/variables.scss";
+@import "style.scss";
 $introductionColor: #82E0AA;
 $discordColor: #5DADE2;
 $steamColor: #F7DC6F;
@@ -9,8 +9,7 @@ $color5: rgb(199, 191, 84);
     background-color: $introductionColor;
 }
 
-#discord
-{
+#discord {
     text-align: center;
     background-color: $discordColor;
 }
@@ -28,9 +27,48 @@ $color5: rgb(199, 191, 84);
     background-color: $githubColor;
 }
 
-@media (min-width: $min-width) {
+img {
+    max-width: $img-size;
+    max-height: $img-size;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $img-size;
+}
 
+.textRight,
+.textLeft {
+    text-align: center;
+}
+
+
+@media (min-width: $min-width) {
     #discordIframe {
         width: auto;
+    }
+
+    .imgLeft {
+        float: left;
+        margin-left: 20%;
+    }
+
+    .imgRight {
+        float: right;
+        margin-right: 20%;
+    }
+
+    .imgLeft,
+    .imgRight {
+        margin-top: -65px;
+    }
+
+    .textRight {
+        margin-right: 20%;
+        text-align: right;
+    }
+
+    .textLeft {
+        margin-left: 20%;
+        text-align: left;
     }
 }

@@ -1,3 +1,116 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 120%;
+  background-color: #AED6F1;
+}
+
+.navbar {
+  overflow: hidden;
+  list-style-type: none;
+  background-color: white;
+}
+
+.navbar a {
+  height: 33px;
+  font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100% / 3);
+  padding: 5px;
+  float: left;
+  color: black;
+  border-style: dotted;
+  border-color: rgba(0, 0, 0, 0);
+  border-top: 0px;
+  border-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.navbar a:hover {
+  border-color: rgba(0, 0, 0, 0.055);
+  background-color: rgba(0, 0, 0, 0.164);
+}
+
+.navbar a:active {
+  border-color: rgba(0, 0, 0, 0.199);
+  background-color: rgba(0, 0, 0, 0.342);
+  color: #001b94;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main {
+  padding-top: 33px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+#headline {
+  height: 124px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+}
+
+footer p {
+  margin: 0;
+  padding: 1cm;
+  background-color: #21618C;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+#returnToTop {
+  position: fixed;
+  width: 100%;
+  bottom: 5%;
+  right: 5%;
+  background-color: #5499C7;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50px;
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.281);
+}
+
 #introduction {
   background-color: #82E0AA;
 }
@@ -20,9 +133,43 @@
   background-color: #5499C7;
 }
 
+img {
+  max-width: 120px;
+  max-height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+}
+
+.textRight,
+.textLeft {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   #discordIframe {
     width: auto;
+  }
+  .imgLeft {
+    float: left;
+    margin-left: 20%;
+  }
+  .imgRight {
+    float: right;
+    margin-right: 20%;
+  }
+  .imgLeft,
+  .imgRight {
+    margin-top: -65px;
+  }
+  .textRight {
+    margin-right: 20%;
+    text-align: right;
+  }
+  .textLeft {
+    margin-left: 20%;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=index.css.map */
