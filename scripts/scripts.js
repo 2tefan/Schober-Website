@@ -2,6 +2,14 @@ $(document).ready(function () {
     $('#header').load("rsc/header.html");
     $('#navbar').load("rsc/navbar.html");
     $('#footer').load("rsc/footer.html");
+
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 1) { 
+            $('#returnToTop').fadeIn(); 
+        } else { 
+            $('#returnToTop').fadeOut(); 
+        } 
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -24,5 +32,4 @@ document.addEventListener('DOMContentLoaded', function () {
             navbar.classList.remove("sticky");
         }
     }
-
 })

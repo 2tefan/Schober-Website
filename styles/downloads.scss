@@ -1,4 +1,4 @@
-@import "style.scss";
+@import "_style.scss";
 $colorInfos: #A3E4D7;
 $colorAndroidApps: #5499C7;
 $colorJavaPrograms: #C39BD3;
@@ -23,9 +23,6 @@ $colorArduino: #F7DC6F;
 }
 
 #androidApps {
-    border-top-style: solid;
-    border-width: 5px;
-    border-color: black;
     transform: skew(5 deg);
     background-color: $colorAndroidApps;
 }
@@ -33,6 +30,7 @@ $colorArduino: #F7DC6F;
 #javaPrograms {
     background-color: $colorJavaPrograms;
 }
+
 
 #arduino {
     background-color: $colorArduino;

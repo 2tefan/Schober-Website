@@ -7,6 +7,7 @@ $colorfooter: #21618C;
 $bodycolor: #AED6F1;
 
 $bottonColor: #5499C7;
+$bottonColorHover: #E74C3C;
 $bottonBorderColor: rgba(0, 0, 0, 0.281);
 
 body {
@@ -103,18 +104,20 @@ a {
 	text-decoration: none;
 }
 
-#returnToTop
-{
+#returnToTop {
 	position: fixed;
-    width: 100%;
-    bottom: 5%;
-    right: 5%;
-    background-color: $bottonColor;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 50px;
+	bottom: 5%;
+	right: 5%;
+	background-color: $bottonColor;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	border-radius: 60px;
 
-    border-style: dashed;
-    border-color: $bottonBorderColor;
+	border-style: dashed;
+	border-color: $bottonBorderColor;
+}
+
+#returnToTop:hover {
+	background-color: $bottonColorHover;
 }
