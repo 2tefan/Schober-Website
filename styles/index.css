@@ -108,10 +108,15 @@ a {
   border-radius: 60px;
   border-style: dashed;
   border-color: rgba(0, 0, 0, 0.281);
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 0;
 }
 
-#returnToTop:hover {
-  background-color: #E74C3C;
+#returnToTop.show {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 #introduction {

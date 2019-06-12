@@ -4,10 +4,10 @@ $(document).ready(function () {
     $('#footer').load("rsc/footer.html");
 
     $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 1) { 
-            $('#returnToTop').fadeIn(); 
+        if ($(this).scrollTop() > 300) { 
+            $('#returnToTop').addClass('show');
         } else { 
-            $('#returnToTop').fadeOut(); 
+            $('#returnToTop').removeClass('show');
         } 
     });
 });

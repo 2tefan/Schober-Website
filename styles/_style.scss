@@ -116,8 +116,13 @@ a {
 
 	border-style: dashed;
 	border-color: $bottonBorderColor;
+
+	transition: opacity 1s;
+
+	opacity: 0;
 }
 
-#returnToTop:hover {
-	background-color: $bottonColorHover;
+#returnToTop.show {
+	opacity: 1;
+	transition: opacity 1s;
 }
