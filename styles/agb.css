@@ -102,21 +102,26 @@ a {
   bottom: 5%;
   right: 5%;
   background-color: #5499C7;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 60px;
   border-style: dashed;
   border-color: rgba(0, 0, 0, 0.281);
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
   opacity: 0;
+  visibility: hidden;
+  width: 28px;
+  height: 28px;
 }
 
 #returnToTop.show {
   opacity: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  visibility: visible;
+}
+
+#returnToTop img {
+  width: 28px;
+  height: 28px;
 }
 
 #agb {

@@ -2,6 +2,7 @@ $header-height: 124px;
 $navbar-height: 33px;
 $img-size: 120px;
 $min-width: 1024px;
+$returnToTheTopSize: 28px;
 
 $colorfooter: #21618C;
 $bodycolor: #AED6F1;
@@ -109,20 +110,26 @@ a {
 	bottom: 5%;
 	right: 5%;
 	background-color: $bottonColor;
-	width: 40px;
-	height: 40px;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 60px;
 
 	border-style: dashed;
 	border-color: $bottonBorderColor;
 
-	transition: opacity 1s;
-
+	transition: opacity 1s, visibility 1s;
 	opacity: 0;
-}
+	visibility: hidden;
 
-#returnToTop.show {
-	opacity: 1;
-	transition: opacity 1s;
+	width: $returnToTheTopSize;
+	height: $returnToTheTopSize;
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	img {
+		width: $returnToTheTopSize;
+		height: $returnToTheTopSize;
+	}
 }
