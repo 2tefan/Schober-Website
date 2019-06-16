@@ -204,7 +204,7 @@ img {
 
 @media (min-width: 1024px) {
   #discordIframe {
-    width: auto;
+    width: 818px;
   }
   .imgLeft {
     float: left;
