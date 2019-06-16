@@ -6,6 +6,19 @@ body {
   background-color: #AED6F1;
 }
 
+main {
+  padding: 0;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 1cm;
+  background-color: #21618C;
+  color: white;
+  text-align: center;
+}
+
 .navbar {
   overflow: hidden;
   list-style-type: none;
@@ -53,11 +66,6 @@ body {
   padding-top: 33px;
 }
 
-main {
-  padding: 0;
-  margin: 0;
-}
-
 #headline {
   height: 124px;
   -webkit-box-sizing: border-box;
@@ -66,14 +74,6 @@ main {
   margin-left: auto;
   margin-right: auto;
   font-size: 35px;
-}
-
-footer p {
-  margin: 0;
-  padding: 1cm;
-  background-color: #21618C;
-  color: white;
-  text-align: center;
 }
 
 h1 {
@@ -124,6 +124,10 @@ a {
   height: 28px;
 }
 
+#agb {
+  background-color: #82E0AA;
+}
+
 .btn {
   background-color: rgba(30, 143, 255, 0.514);
   border: none;
@@ -161,4 +165,66 @@ a {
     width: auto;
   }
 }
-/*# sourceMappingURL=downloads.css.map */
+
+#introduction {
+  background-color: #82E0AA;
+}
+
+#discord {
+  text-align: center;
+  background-color: #5DADE2;
+}
+
+#discordIframe {
+  height: 500px;
+  width: 100%;
+}
+
+#steam {
+  background-color: #F7DC6F;
+}
+
+#github {
+  background-color: #5499C7;
+}
+
+img {
+  max-width: 120px;
+  max-height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+}
+
+.textRight,
+.textLeft {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  #discordIframe {
+    width: auto;
+  }
+  .imgLeft {
+    float: left;
+    margin-left: 20%;
+  }
+  .imgRight {
+    float: right;
+    margin-right: 20%;
+  }
+  .imgLeft,
+  .imgRight {
+    margin-top: -65px;
+  }
+  .textRight {
+    margin-right: 20%;
+    text-align: right;
+  }
+  .textLeft {
+    margin-left: 20%;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */

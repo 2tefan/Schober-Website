@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $('#header').load("rsc/header.html");
-    $('#navbar').load("rsc/navbar.html");
-    $('#footer').load("rsc/footer.html");
+    $('#header').load("../html/header.html");
+    $('#navbar').load("../html/navbar.html");
+    $('#footer').load("../html/footer.html");
 
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 300) { 

@@ -1,0 +1,28 @@
+#returnToTop {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	background-color: $bottonColor;
+	padding: 5px;
+	border-radius: 60px;
+
+	border-style: dashed;
+	border-color: $bottonBorderColor;
+
+	transition: opacity 1s, visibility 1s;
+	opacity: 0;
+	visibility: hidden;
+
+	width: $returnToTheTopSize;
+	height: $returnToTheTopSize;
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	img {
+		width: $returnToTheTopSize;
+		height: $returnToTheTopSize;
+	}
+}

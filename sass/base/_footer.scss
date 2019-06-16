@@ -1,0 +1,9 @@
+@import '../utilities/colors';
+
+footer p {
+	margin: 0;
+	padding: 1cm;
+	background-color: $colorfooter;
+	color: white;
+	text-align: center;
+}
