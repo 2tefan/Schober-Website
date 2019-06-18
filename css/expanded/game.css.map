@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAC;EACJ,WAAW,EAAE,oBAAoB;EACjC,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,SAAS,EAAE,IAAI;EACf,gBAAgB,ECPL,OAAO;CDQlB;;AAED,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACT;;ADXD,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,GAAG;EACX,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,KAAK;CACjB",
+    "sources": [
+        "../../sass/game.scss",
+        "../../sass/base/_body.scss",
+        "../../sass/utilities/_colors.scss"
+    ],
+    "names": [],
+    "file": "game.css"
+}
