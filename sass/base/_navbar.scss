@@ -1,0 +1,93 @@
+.navbar {
+    overflow: hidden;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+
+    a {
+        height: $navbar-height;
+        font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        width: auto;
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        color: black;
+        border-style: dotted;
+        border-color: rgba(0, 0, 0, 0);
+        border-top: 0px;
+        border-bottom: 0px;
+        text-align: center;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+            border-color: rgba(0, 0, 0, 0.055);
+            background-color: rgba(0, 0, 0, 0.164);
+        }
+
+        &:active {
+            border-color: rgba(0, 0, 0, 0.199);
+            background-color: rgba(0, 0, 0, 0.342);
+            color: rgb(0, 27, 148);
+        }
+
+        &:not(:first-child) {
+            display: none;
+        }
+
+        &.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    &.responsive {
+        a {
+            float: none;
+            display: block;
+            text-align: left;
+
+            &.icon {
+                float: right;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    &+.main {
+        padding-top: $navbar-height;
+    }
+}
+
+@media (min-width: $min-width) {
+    .navbar {
+        a {
+            height: $navbar-height;
+            font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            width: calc(100% / 4);
+            padding: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            float: left;
+            color: black;
+            border-style: dotted;
+            border-color: rgba(0, 0, 0, 0);
+            border-top: 0px;
+            border-bottom: 0px;
+
+            &.icon {
+                display: none !important;
+            }
+
+            &:not(:first-child) {
+                display: block;
+            }
+        }
+    }
+}
