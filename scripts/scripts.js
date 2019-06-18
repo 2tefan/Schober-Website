@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    $('#header').load("../../html/header.html");
-    $('#navbar').load("../../html/navbar.html");
-    $('#footer').load("../../html/footer.html");
+    $('#header').load("../../html/elements/header.html");
+    $('#navbar').load("../../html/elements/navbar.html");
+    $('#games').load("../../html/elements/games.html");
+    $('#footer').load("../../html/elements/footer.html");
 
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 300) { 

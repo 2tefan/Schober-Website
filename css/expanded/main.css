@@ -30,7 +30,7 @@ footer p {
   font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   padding: 5px;
   float: left;
   color: black;
@@ -164,6 +164,10 @@ a {
   .btn {
     width: auto;
   }
+}
+
+#javascriptApps {
+  background-color: #7DCEA0;
 }
 
 #introduction {
