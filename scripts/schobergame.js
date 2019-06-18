@@ -7,8 +7,6 @@ document.addEventListener('keydown', function (event) {
         setTimeout(function () {
             stopMove();
         }, 20);
-    } else {
-        stopMove();
     }
 });
 
@@ -17,6 +15,14 @@ document.addEventListener('mousedown', function (event) {
 });
 
 document.addEventListener('mouseup', function (event) {
+    stopMove();
+});
+
+document.addEventListener('touchstart', function (event) {
+    moveup();
+});
+
+document.addEventListener('touchcancel', function (event) {
     stopMove();
 });
 
@@ -32,6 +38,8 @@ function resizedWindow() {
 function resetGame() {
     player = new component(30, 30, "red", 10, 120);
     obstacles = [];
+    player.gravitySpeed = 0;
+    stopMove();
 }
 
 function redraw() {
@@ -48,22 +56,40 @@ function redraw() {
         }
     }
     myGameArea.clear();
-    myGameArea.draw();
+
     myGameArea.frameNo += 1;
-
-    if (myGameArea.frameNo == 1 || everyinterval(150)) {
-        x = myGameArea.canvas.width;
-
-        gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
-        distanceTop = Math.floor(Math.random() * (distanceTopMax - distanceTopMin + 1) + distanceTopMin);
-        obstacles.push(new component(10, distanceTop, "green", x, 0));
-        obstacles.push(new component(10, window.innerHeight - gap + distanceTop, "green", x, gap + distanceTop));
-    }
     for (i = 0; i < obstacles.length; i += 1) {
         obstacles[i].x += -1;
         obstacles[i].redraw();
     }
     player.newPos();
+
+    console.log(window.innerWidth);
+    if (myGameArea.frameNo == 1) {
+        gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
+
+        distanceTop = Math.floor(Math.random() * (distanceTopMax - distanceTopMin + 1) + distanceTopMin);
+        obstacles.push(new component(25, distanceTop, "green", 200, 0));
+        obstacles.push(new component(25, window.innerHeight - gap + distanceTop, "green", 200, gap + distanceTop));
+    }
+
+    if (obstacles[obstacles.length - 1].x < window.innerWidth) {
+        gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
+
+        distanceTop = Math.floor(Math.random() * (distanceTopMax - distanceTopMin + 1) + distanceTopMin);
+        obstacles.push(new component(25, distanceTop, "green", obstacles[obstacles.length - 1].x + 200, 0));
+        obstacles.push(new component(25, window.innerHeight - gap + distanceTop, "green", obstacles[obstacles.length - 2].x + 200, gap + distanceTop));
+
+    }
+    if (obstacles[0].x < -obstacles[0].width) {
+        console.log(obstacles[0].x);
+        obstacles.shift();
+        obstacles.shift();
+    }
+
+    if (player.y > window.innerHeight-player.height || player.y < 0) {
+        myGameArea.stop();
+    }
 
     player.redraw();
 }
@@ -103,7 +129,7 @@ function component(width, height, color, x, y) {
     this.speedX = 0;
     this.speedY = 0;
 
-    this.gravity = 0.05;
+    this.gravity = 0.1;
     this.gravitySpeed = 0;
 
     this.redraw = function () {
@@ -144,13 +170,25 @@ function everyinterval(n) {
 }
 
 function moveup() {
-    accelerate(-.2);
+    accelerate(-0.2);
 }
 
 function stopMove() {
-    accelerate(.05);
+    accelerate(0.05);
 }
 
 function accelerate(n) {
     player.gravity = n;
+}
+
+const extendArray = (array, extend) => {
+    alert(array.length);
+    var temp = [array.length + extend - 1];
+
+    for (i = 0; i < array.length; i++) {
+        temp[i] = array[i];
+    }
+
+    alert(array.length);
+    return temp;
 }
