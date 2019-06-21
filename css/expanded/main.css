@@ -102,7 +102,7 @@ footer p {
   padding-top: 33px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 530px) {
   .navbar a {
     height: 33px;
     font-family: Consolas, Monospace, Arial, Helvetica, sans-serif;

@@ -64,7 +64,7 @@
     }
 }
 
-@media (min-width: $min-width) {
+@media (min-width: $min-width-navbar) {
     .navbar {
         a {
             height: $navbar-height;
