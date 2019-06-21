@@ -4,9 +4,11 @@ var obstacles = [];
 document.addEventListener('keydown', function (event) {
     if (event.keyCode == 32) {
         moveup();
-        setTimeout(function () {
-            stopMove();
-        }, 20);
+    }
+});
+document.addEventListener('keyup', function (event) {
+    if (event.keyCode == 32) {
+        stopMove ();
     }
 });
 
@@ -23,6 +25,10 @@ document.addEventListener('touchstart', function (event) {
 });
 
 document.addEventListener('touchcancel', function (event) {
+    stopMove();
+});
+
+document.addEventListener('touchend', function (event) {
     stopMove();
 });
 
