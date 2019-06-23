@@ -175,10 +175,6 @@ a {
   height: 28px;
 }
 
-#agb {
-  background-color: #82E0AA;
-}
-
 .btn {
   background-color: rgba(30, 143, 255, 0.514);
   border: none;
@@ -191,6 +187,10 @@ a {
 
 .btn:hover {
   background-color: rgba(30, 143, 255, 0.808);
+}
+
+#agb {
+  background-color: #82E0AA;
 }
 
 #infomations {
