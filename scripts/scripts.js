@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // When the user scrolls the page, execute myFunction 
+    // When the user scrolls the page, execute myFunction
     window.onscroll = function () {
         if (window.pageYOffset >= $('#headline').outerHeight(true)) {
             $('#myNavbar').addClass("sticky");

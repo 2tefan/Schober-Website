@@ -1,3 +1,5 @@
+// main: ../main.scss
+
 .btn {
     background-color: rgba(30, 143, 255, 0.514);
     border: none;
@@ -10,4 +12,19 @@
 
 .btn:hover {
     background-color: rgba(30, 143, 255, 0.808);
+}
+
+#restartButton
+{
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 90%;
+}
+
+
+@media (min-width: $min-width) {
+    .btn {
+        width: auto;
+    }
 }

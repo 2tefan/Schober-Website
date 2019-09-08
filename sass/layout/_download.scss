@@ -1,3 +1,5 @@
+// main: ../main.scss
+
 #infomations {
     background-color: $colorInfos;
 }
@@ -14,10 +16,4 @@
 
 #arduino {
     background-color: $colorArduino;
-}
-
-@media (min-width: $min-width) {
-    .btn {
-        width: auto;
-    }
 }

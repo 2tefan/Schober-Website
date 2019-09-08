@@ -1,3 +1,4 @@
+// compileCompressed: ../css/main.css
 @import 'base/body';
 @import 'base/footer';
 @import 'base/header';
@@ -6,6 +7,7 @@
 
 @import 'components/returnToTop';
 @import 'components/buttons';
+@import 'components/canvas';
 
 @import 'layout/agb';
 @import 'layout/download';
