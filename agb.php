@@ -13,24 +13,18 @@
 	<link rel="icon" href="src/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script src="scripts/scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<div id="header"></div>
-	<nav id="myNavbar" class="navbar"></nav>
+	<nav id="myNavbar" class="navbar"><?php include_once("html/elements/navbar.html"); ?></nav>
 	<main class="main">
 		<div class="text" id="agb">
 			<h1>Allgemeine Geschäftsbedingungen</h1>
 			<p>Wenn Sie diese Webseite benutzen wollen, müssen Sie folgendem Absatz zustimmen.</br></p>
 			<ol>
-				<li>Für Schäden an ihrem technischen Gerät, während der Nutzung dieser Webseite, übernehmen
-					wir keine Haftung.</li>
-				<li>Für die zum Download stehenden Dateien übernehmen wir, im Falle eines Schadens, keine
-					Haftung.</li>
+				<li>Für Schäden an ihrem technischen Gerät, während der Nutzung dieser Webseite, übernehmen wir keine Haftung.</li>
+				<li>Für die zum Download stehenden Dateien übernehmen wir, im Falle eines Schadens, keine	Haftung.</li>
 			</ol>
 		</div>
 	</main>

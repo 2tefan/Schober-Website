@@ -14,14 +14,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script src="scripts/scripts.js" type="text/javascript"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
 	<div id="header"></div>
-	<nav id="myNavbar" class="navbar"></nav>
+	<nav id="myNavbar" class="navbar">
+		<!--#include virtual="html/elements/navbar.html" -->
+	</nav>
 	<main class="main">
 		<div class="text" id="introduction">
 			<h1>Startseite</h1>
@@ -34,8 +36,7 @@
 
 		<div class="text" id="discord">
 			<h1>Der Discord-Server</h1>
-			<iframe id="discordIframe" src="https://discordapp.com/widget?id=557631195819671562&theme=dark"
-				allowtransparency="true" frameborder="0"></iframe>
+			<iframe id="discordIframe" src="https://discordapp.com/widget?id=557631195819671562&theme=dark" allowtransparency="true" frameborder="0"></iframe>
 			<p>
 				Hier kannst du dem Server beitreten <a href="https://discord.gg/zNKuN3J">https://discord.gg/zNKuN3J</a>
 			</p>
