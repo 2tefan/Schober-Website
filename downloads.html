@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Schober</title>
+	<title>Schober Downloads</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,43 @@
 	<link rel="icon" href="src/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		// Looks if the animation is finished
+		function whichAnimationEvent() {
+			var t,
+				el = document.createElement("fakeelement");
+
+			var animations = {
+				"animation": "animationend",
+				"OAnimation": "oAnimationEnd",
+				"MozAnimation": "animationend",
+				"WebkitAnimation": "webkitAnimationEnd"
+			}
+
+			for (t in animations) {
+				if (el.style[t] !== undefined) {
+					return animations[t];
+				}
+			}
+		}
+
+		var animationEvent = whichAnimationEvent();
+
+		jQuery(document).ready(function($) {
+
+			//When a image with the class aniIMG is clicked, it spins and then it gets resetted.
+			$('.aniIMG').on('click', function(e) {
+				$(this).addClass("rotateAni");
+				$(this).one(animationEvent,
+					function(event) {
+						$(this).removeClass("rotateAni");
+					});
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -35,7 +72,7 @@
 
 
 			<h2>Schober Clicker</h2>
-			<img src="src/schoberClicker.svg">
+			<img src="src/schoberClicker.svg" class="aniIMG">
 			<p>
 				Lade dir hier die neuste Version vom Schober Clicker herunter. In diesem Spiel kannst du auf einen Schober drücken und immer mehr Punkte sammeln.</br>
 			</p>
@@ -43,7 +80,7 @@
 
 			<br>
 			<h2>Schober Calculator</h2>
-			<img src="src/schoberCalculator.svg">
+			<img src="src/schoberCalculator.svg" class="aniIMG">
 			<p>
 				Ist ein Rechner zum Berechnen von einfachen Rechnungen.</br>
 			</p>
@@ -52,7 +89,7 @@
 
 
 			<h2>Schober Orakel</h2>
-			<img src="src/schoberOrakel.svg">
+			<img src="src/schoberOrakel.svg" class="aniIMG">
 			<p>
 				Kann dir immer eine Antwort auf eine Ja/Nein frage geben.</br>
 			</p>
@@ -61,7 +98,7 @@
 
 
 			<h2>Schober Life</h2>
-			<img src="src/schoberLife.png">
+			<img src="src/schoberLife.png" class="aniIMG">
 			<p>
 				Hier kannst du so handeln wie du möchtest, jedoch hat dies immer Auswirkungen...</br>
 			</p>
