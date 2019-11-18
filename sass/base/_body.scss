@@ -28,9 +28,13 @@ h2 {
 	color: $greyieBlueColor;
 }
 
-.downloadItem {
-	background-color: white;
-	padding: 5px 35px 30px;
-	margin-bottom: 30px;
-	box-shadow: 0 5px 10px 0 black;
+a:focus {
+	outline-style: dashed;
+	outline-color: $amberColor;
+	outline-width: 3px;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
 }

@@ -12,22 +12,27 @@
     position: fixed;
     top: 0;
     width: 100%;
-    text-align:center;
+    text-align: center;
   }
 
   li {
     display: inline-block;
-  }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0.25em 16px;
-    text-decoration: none;
-  }
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 0.25em 16px;
+      text-decoration: none;
+    }
 
-  li a:hover {
-    background-color: $greyieBlueColor;
+    a:hover {
+      background-color: $greyieBlueColor;
+    }
+
+    a:focus {
+      outline-style: groove;
+      text-decoration: underline;
+    }
   }
 }

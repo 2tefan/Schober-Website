@@ -10,3 +10,15 @@
     outline-color: $greyieBlueColor;
   }
 }
+
+.downloadItem {
+	background-color: white;
+	padding: 5px 35px 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 5px 10px 0 black;
+
+  a:visited
+  {
+    color: $nearlyWhite;
+  }
+}
