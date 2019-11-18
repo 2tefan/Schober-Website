@@ -1,37 +1,52 @@
 // main: ../main.scss
 @import '../utilities/_variables';
 
-.btn {
+.downloadLink,
+.downloadLinkRight {
   background-color: $goodBlueColor;
   border: none;
   color: white;
-  width: 100%;
+  width: auto;
   cursor: pointer;
   font-size: 20px;
   padding: 10px 20px;
-  margin-top: 20px;
   margin-bottom: 25px;
   border-radius: 25px;
-  float: center;
+
+  a:visited {
+    color: green;
+  }
 }
 
-.btn:hover {
+.downloadLinkRight {
+  float: right;
+  margin-top: -100px;
+}
+
+.downloadLink:hover,
+.downloadLinkRight:hover {
   background-color: $greyieBlueColor;
+  outline: 0;
 }
 
-.btn:focus {
+.downloadLink:focus,
+.downloadLinkRight:focus {
   box-shadow: 0 0 0 10px $amberColor;
+  outline: 0;
+}
+
+.downloadLink {
+  float: center;
+  margin-top: 20px;
+}
+
+.downloadLinkRight {
+  float: right;
+  margin-top: -100px;
 }
 
 ::-moz-focus-inner {
   border: 0;
-}
-
-#restartButton {
-  height: 10%;
-  width: 100%;
-  position: absolute;
-  top: 90%;
 }
 @media (min-width: $min-width) {
   .btn {

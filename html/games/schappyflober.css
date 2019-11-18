@@ -1,0 +1,28 @@
+canvas {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  background-color: #f1f1f1;
+  display: block;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 120%;
+  background-color: $nearlyWhite;
+}
+
+#restartButton {
+  background-color: $goodBlueColor;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  float: center;
+}
