@@ -13,35 +13,33 @@
 	<link rel="icon" href="src/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-	<div id="header"></div>
 	<nav id="myNavbar" class="navbar">
 		<!--#include virtual="html/elements/navbar.html" -->
 	</nav>
-	<main class="main">
+	<main>
 		<div class="text" id="introduction">
 			<h1>Startseite</h1>
 			<p>
-				Hallo und willkommen auf meiner Website! </br>
-				Hier kannst du meine Programme aber auch Programme von Lukas und Noah unter Downloads
-				herunterladen.</br>
+				Willkommen auf <span style="font-size: 25px;">schober.space!</span> <br>
+				Alle Programme und alles Andere kannst du unter Downloads finden.
 			</p>
 		</div>
-
+		<div class="text imgAndText" class="imgAndText" id="github">
+			<h1 class="textLeft">Mein Github Profil</h1>
+			<a href="https://github.com/2tefan">
+				<img class="imgRight" src="src/github.svg"></a>
+			<p class="textLeft">Ja, ich benutze auch Github. Hier ist mein Profil.</p>
+		</div>
 		<div class="text" id="discord">
 			<h1>Der Discord-Server</h1>
-			<iframe id="discordIframe" src="https://discordapp.com/widget?id=557631195819671562&theme=dark" allowtransparency="true" frameborder="0"></iframe>
 			<p>
 				Hier kannst du dem Server beitreten <a href="https://discord.gg/zNKuN3J">https://discord.gg/zNKuN3J</a>
 			</p>
+			<iframe id="discordIframe" src="https://discordapp.com/widget?id=557631195819671562&theme=dark" allowtransparency="true" frameborder="0"></iframe>
 		</div>
-
 		<div class="text imgAndText" id="steam">
 			<h1 class="textRight">Mein Steam Profil</h1>
 			<a href="https://steamcommunity.com/profiles/76561198132008497">
@@ -49,21 +47,11 @@
 			<p class="textRight">Das ist mein Steam Profil :)</p>
 		</div>
 
-		<div class="text" id="exophase">
-			<h1>Mein Exophase Profil</h1>
-			<a href="https://www.exophase.com/user/2tefan/">
-				<img src="https://card.exophase.com/2/0/38869.png?1561323120">
-			</a>
-		</div>
 
-		<div class="text imgAndText" class="imgAndText" id="github">
-			<h1 class="textLeft">Mein Github Profil</h1>
-			<a href="https://github.com/2tefan">
-				<img class="imgRight" src="src/github.svg"></a>
-			<p class="textLeft">Ja, ich benutze auch Github. Hier ist mein Profil.</p>
-		</div>
 	</main>
-	<div id="footer"></div>
+	<footer id="footer">
+		<!--#include virtual="html/elements/footer.html" -->
+	</footer>
 </body>
 
 </html>

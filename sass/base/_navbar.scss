@@ -3,7 +3,8 @@
 
 .navbar {
   ul {
-    background-color: $navbarColor;
+    height: 39px;
+    background-color: $notJustGreyColor;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,6 +28,6 @@
   }
 
   li a:hover {
-    background-color: $navbarColorHover;
+    background-color: $greyieBlueColor;
   }
 }

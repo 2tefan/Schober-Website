@@ -1,33 +1,40 @@
 // main: ../main.scss
-
-
 @import '../utilities/_variables';
 
 .btn {
-    background-color: rgba(30, 143, 255, 0.514);
-    border: none;
-    color: white;
-    width: 100%;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 12px 30px;
+  background-color: $goodBlueColor;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  float: center;
 }
 
 .btn:hover {
-    background-color: rgba(30, 143, 255, 0.808);
+  background-color: $greyieBlueColor;
 }
 
-#restartButton
-{
+.btn:focus {
+  box-shadow: 0 0 0 10px $amberColor;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+#restartButton {
   height: 10%;
   width: 100%;
   position: absolute;
   top: 90%;
 }
-
-
 @media (min-width: $min-width) {
-    .btn {
-        width: auto;
-    }
+  .btn {
+    width: auto;
+  }
 }

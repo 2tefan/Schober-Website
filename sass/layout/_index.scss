@@ -1,82 +1,70 @@
 // main: ../main.scss
 
-#introduction {
-    background-color: $introductionColor;
+#github {
+  background-color: $goodBlueColor;
+
+  h1 {
+    color: $nearlyWhite;
+  }
 }
 
 #discord {
-    text-align: center;
-    background-color: $discordColor;
+  text-align: center;
 }
 
 #discordIframe {
-    height: 500px;
-    width: 100%;
-}
-
-#steam {
-    background-color: $steamColor;
-}
-
-#github {
-    background-color: $githubColor;
+  height: 500px;
+  width: 100%;
 }
 
 #exophase {
-    background-color: $exophaseColor;
+  img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    img {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    h1 {
-        text-align: center;
-    }
+  h1 {
+    text-align: center;
+  }
 }
 
 img {
-    max-width: $img-size;
-    max-height: $img-size;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: $img-size;
+  max-height: $img-size;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.textRight,
-.textLeft {
-    text-align: center;
+.textLeft,
+.textRight {
+  text-align: center;
 }
-
 @media (min-width: $min-width) {
-    #discordIframe {
-        width: 818px;
-    }
+  #discordIframe {
+    width: 818px;
+  }
 
-    .imgLeft {
-        float: left;
-        margin-left: 20%;
-    }
+  .imgLeft {
+    float: left;
+  }
 
-    .imgRight {
-        float: right;
-        margin-right: 20%;
-    }
+  .imgRight {
+    float: right;
+  }
 
-    .imgLeft,
-    .imgRight {
-        margin-top: -65px;
-    }
+  .imgLeft,
+  .imgRight {
+    margin-top: -65px;
+  }
 
-    .textRight {
-        margin-right: 20%;
-        text-align: right;
-    }
+  .textRight {
+    text-align: right;
+  }
 
-    .textLeft {
-        margin-left: 20%;
-        text-align: left;
-    }
+  .textLeft {
+    text-align: left;
+  }
 }
