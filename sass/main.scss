@@ -1,18 +1,14 @@
 // compileCompressed: ../css/main.css
 @import 'base/body';
 @import 'base/footer';
-@import 'base/header';
 @import 'base/navbar';
 @import 'base/text';
 
-@import 'components/returnToTop';
 @import 'components/buttons';
-@import 'components/canvas';
 
-@import 'layout/agb';
-@import 'layout/download';
-@import 'layout/games';
 @import 'layout/index';
+@import 'layout/downloads';
 
+@import 'utilities/animations';
 @import 'utilities/colors';
 @import 'utilities/variables';

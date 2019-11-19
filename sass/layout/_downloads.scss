@@ -1,0 +1,32 @@
+// main: ../main.scss
+
+#androidApps {
+  img {
+    float: center;
+    outline-style: dashed;
+    outline-width: 4px;
+    outline-color: $greyieBlueColor;
+    margin: 30px auto;
+  }
+}
+
+.downloadItem {
+  background-color: white;
+  padding: 5px 35px 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px 0 black;
+
+  a:visited {
+    color: $nearlyWhite;
+  }
+}
+@media (min-width: $min-width) {
+  #androidApps {
+    img {
+      float: right;
+      margin-left: 20%;
+      margin-top: -3%;
+      outline-width: 5px;
+    }
+  }
+}

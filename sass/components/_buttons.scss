@@ -1,30 +1,42 @@
 // main: ../main.scss
+@import '../utilities/_variables';
 
 .btn {
-    background-color: rgba(30, 143, 255, 0.514);
-    border: none;
-    color: white;
-    width: 100%;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 12px 30px;
-}
-
-.btn:hover {
-    background-color: rgba(30, 143, 255, 0.808);
-}
-
-#restartButton
-{
-  height: 10%;
+  background-color: $goodBlueColor;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 25px;
   width: 100%;
-  position: absolute;
-  top: 90%;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+
+  &:hover {
+    background-color: $greyieBlueColor;
+    outline: 0;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 10px $amberColor;
+    outline: 0;
+  }
 }
-
-
 @media (min-width: $min-width) {
-    .btn {
-        width: auto;
+  .btn {
+    margin-top: 80px;
+  }
+}
+@media (min-width: $tablet-size) {
+  .btn {
+    width: 25%;
+
+    &--right
+    {
+      float: right;
+        margin-top: -35px;
     }
+  }
 }

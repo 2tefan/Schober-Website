@@ -1,82 +1,79 @@
 // main: ../main.scss
 
-#introduction {
-    background-color: $introductionColor;
-}
-
-#discord {
-    text-align: center;
-    background-color: $discordColor;
-}
-
-#discordIframe {
-    height: 500px;
-    width: 100%;
-}
-
-#steam {
-    background-color: $steamColor;
+h1 {
+  text-align: center;
 }
 
 #github {
-    background-color: $githubColor;
+  background-color: $goodBlueColor;
+
+  h1 {
+    color: $nearlyWhite;
+  }
+  box-shadow: 0 5px 10px 0 black;
 }
 
-#exophase {
-    background-color: $exophaseColor;
+#discord {
+  text-align: center;
+}
 
-    img {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    h1 {
-        text-align: center;
-    }
+#discordIframe {
+  height: 500px;
+  width: 100%;
 }
 
 img {
-    max-width: $img-size;
-    max-height: $img-size;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: $img-size;
+  max-height: $img-size;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.textRight,
-.textLeft {
-    text-align: center;
+.imageAnchor:focus {
+  outline: none;
+
+  img {
+    box-shadow: 0 5px 10px 0 black;
+  }
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+.textLeft,
+.textRight {
+  text-align: center;
 }
 
 @media (min-width: $min-width) {
-    #discordIframe {
-        width: 818px;
-    }
+  h1{
+    text-align: inherit;
+  }
+  .imgLeft {
+    float: left;
+  }
 
-    .imgLeft {
-        float: left;
-        margin-left: 20%;
-    }
+  .imgRight {
+    float: right;
+  }
 
-    .imgRight {
-        float: right;
-        margin-right: 20%;
-    }
+  .imgLeft,
+  .imgRight {
+    margin-top: -60px;
+  }
 
-    .imgLeft,
-    .imgRight {
-        margin-top: -65px;
-    }
+  .textRight {
+    text-align: right;
+  }
 
-    .textRight {
-        margin-right: 20%;
-        text-align: right;
-    }
-
-    .textLeft {
-        margin-left: 20%;
-        text-align: left;
-    }
+  .textLeft {
+    text-align: left;
+  }
+}
+@media (min-width: $tablet-size) {
+  #discordIframe {
+    width: 800px;
+  }
 }

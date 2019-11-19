@@ -13,31 +13,39 @@
 	<link rel="icon" href="src/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script src="scripts/scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<div id="header"></div>
-	<nav id="myNavbar" class="navbar"></nav>
+	<nav id="myNavbar" class="navbar">
+		<!--#include virtual="html/elements/navbar.html" -->
+	</nav>
 	<main class="main">
 		<div class="text" id="introduction">
 			<h1>Games</h1>
 			<p>
-				Hier gibts ein paar kleine Spiele zum Ausprobieren.
+				Hier gibts ein paar kleine Spiele zum Ausprobieren. Diese muss man aber nicht herunterladen, sondern kann man gleich im Browser spielen.
 			</p>
 		</div>
-		<div class="text" id="javascriptApps">
+		<article class="text" id="javascriptApps">
 			<h1>Javascript</h1>
-            <h2>Schappy Flober</h2>
-            <p>Mein erstes kleines Programm indem man sich als rotes Rechteck zwischen grünen Säulen vorbeibewegen muss.</p>
-			<a  href="html/games/schappyflober.html"><button
-                class="btn">Starten</button></a>
-		</div>
+			<p>
+				Hier sind alle Javascript Spiele aufgelistet...
+			</p>
+			<section class="downloadItem">
+				<h2>Schappy Flober</h2>
+				<p>
+					Mein erstes kleines Programm indem man sich als rotes Rechteck zwischen grünen Säulen vorbeibewegen muss.
+				</p>
+				<br>
+				<a class="btn btn--right" href="html/games/schappyflober.html">Starten</a>
+			</section>
+
+
+		</article>
 	</main>
-	<div id="footer"></div>
+	<footer id="footer">
+		<!--#include virtual="html/elements/footer.html" -->
+	</footer>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 // main: ../main.scss
-
 @import '../utilities/colors';
 
 body {
@@ -7,10 +6,37 @@ body {
 	padding: 0;
 	margin: 0;
 	font-size: 120%;
-	background-color: $bodyColor;
+	background-color: $nearlyWhite;
 }
 
 main {
 	padding: 0;
-	margin: 0;
+	margin: 39px 0 0;
+}
+
+h1 {
+	color: $goodBlueColor;
+}
+
+article {
+	h1 {
+		font-size: 200%;
+	}
+}
+
+h2 {
+	color: $greyieBlueColor;
+}
+
+a {
+	&:focus {
+		outline-style: dashed;
+		outline-color: $amberColor;
+		outline-width: 3px;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: black;
+	}
 }
