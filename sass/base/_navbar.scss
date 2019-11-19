@@ -13,6 +13,7 @@
     top: 0;
     width: 100%;
     text-align: center;
+    z-index: 5;
   }
 
   li {
@@ -24,18 +25,17 @@
       text-align: center;
       padding: 0.25em 16px;
       text-decoration: none;
-    }
 
-    a:active,
-    a:hover {
-      background-color: $greyieBlueColor;
-      outline: none;
-      text-decoration: none;
-    }
+      &:focus {
+        text-decoration: underline;
+      }
 
-    a:focus {
-      outline-style: groove;
-      text-decoration: underline;
+      &:active,
+      &:hover {
+        background-color: $greyieBlueColor;
+        outline-style: none;
+        text-decoration: none;
+      }
     }
   }
 }

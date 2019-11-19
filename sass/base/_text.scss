@@ -1,4 +1,5 @@
 // main: ../main.scss
+@import '../utilities/_variables';
 
 h1 {
 	margin-block-start: 0;
@@ -8,13 +9,22 @@ h1 {
 }
 
 .text {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 25%;
-	padding-right: 25%;
+	padding: 20px 5%;
 	overflow: hidden;
 }
 
 a {
 	text-decoration: none;
+}
+@media (min-width: $min-width) {
+	.text {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+@media (min-width: $tablet-size) {
+	.text {
+		padding-left: 25%;
+		padding-right: 25%;
+	}
 }

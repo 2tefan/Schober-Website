@@ -1,11 +1,16 @@
 // main: ../main.scss
 
+h1 {
+  text-align: center;
+}
+
 #github {
   background-color: $goodBlueColor;
 
   h1 {
     color: $nearlyWhite;
   }
+  box-shadow: 0 5px 10px 0 black;
 }
 
 #discord {
@@ -17,19 +22,6 @@
   width: 100%;
 }
 
-#exophase {
-  img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  h1 {
-    text-align: center;
-  }
-}
-
 img {
   max-width: $img-size;
   max-height: $img-size;
@@ -38,15 +30,27 @@ img {
   margin-right: auto;
 }
 
+.imageAnchor:focus {
+  outline: none;
+
+  img {
+    box-shadow: 0 5px 10px 0 black;
+  }
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
 .textLeft,
 .textRight {
   text-align: center;
 }
-@media (min-width: $min-width) {
-  #discordIframe {
-    width: 818px;
-  }
 
+@media (min-width: $min-width) {
+  h1{
+    text-align: inherit;
+  }
   .imgLeft {
     float: left;
   }
@@ -57,7 +61,7 @@ img {
 
   .imgLeft,
   .imgRight {
-    margin-top: -65px;
+    margin-top: -60px;
   }
 
   .textRight {
@@ -66,5 +70,10 @@ img {
 
   .textLeft {
     text-align: left;
+  }
+}
+@media (min-width: $tablet-size) {
+  #discordIframe {
+    width: 800px;
   }
 }

@@ -28,13 +28,15 @@ h2 {
 	color: $greyieBlueColor;
 }
 
-a:focus {
-	outline-style: dashed;
-	outline-color: $amberColor;
-	outline-width: 3px;
-}
+a {
+	&:focus {
+		outline-style: dashed;
+		outline-color: $amberColor;
+		outline-width: 3px;
+	}
 
-a:visited {
-	text-decoration: none;
-	color: black;
+	&:visited {
+		text-decoration: none;
+		color: black;
+	}
 }

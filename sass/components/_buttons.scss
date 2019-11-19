@@ -1,55 +1,42 @@
 // main: ../main.scss
 @import '../utilities/_variables';
 
-.downloadLink,
-.downloadLinkRight {
+.btn {
   background-color: $goodBlueColor;
   border: none;
   color: white;
-  width: auto;
   cursor: pointer;
   font-size: 20px;
-  padding: 10px 20px;
-  margin-bottom: 25px;
+  padding: 10px 0;
   border-radius: 25px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
 
-  a:visited {
-    color: green;
+  &:hover {
+    background-color: $greyieBlueColor;
+    outline: 0;
   }
-}
 
-.downloadLinkRight {
-  float: right;
-  margin-top: -100px;
-}
-
-.downloadLink:hover,
-.downloadLinkRight:hover {
-  background-color: $greyieBlueColor;
-  outline: 0;
-}
-
-.downloadLink:focus,
-.downloadLinkRight:focus {
-  box-shadow: 0 0 0 10px $amberColor;
-  outline: 0;
-}
-
-.downloadLink {
-  float: center;
-  margin-top: 20px;
-}
-
-.downloadLinkRight {
-  float: right;
-  margin-top: -100px;
-}
-
-::-moz-focus-inner {
-  border: 0;
+  &:focus {
+    box-shadow: 0 0 0 10px $amberColor;
+    outline: 0;
+  }
 }
 @media (min-width: $min-width) {
   .btn {
-    width: auto;
+    margin-top: 80px;
+  }
+}
+@media (min-width: $tablet-size) {
+  .btn {
+    width: 25%;
+
+    &--right
+    {
+      float: right;
+        margin-top: -35px;
+    }
   }
 }
