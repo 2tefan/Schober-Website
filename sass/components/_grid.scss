@@ -1,0 +1,16 @@
+// main: ../main.scss
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+  grid-column-gap: 30px;
+}
+
+.grid-item {}
+@media (min-width: $tablet-size) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px;
+  }
+}

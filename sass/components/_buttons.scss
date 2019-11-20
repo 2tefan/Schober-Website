@@ -13,6 +13,7 @@
   display: block;
   text-align: center;
   margin-top: 30px;
+  white-space: nowrap;
 
   &:hover {
     background-color: $greyieBlueColor;
@@ -26,17 +27,7 @@
 }
 @media (min-width: $min-width) {
   .btn {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
-@media (min-width: $tablet-size) {
-  .btn {
-    width: 25%;
-
-    &--right
-    {
-      float: right;
-        margin-top: -35px;
-    }
-  }
-}
+@media (min-width: $tablet-size) {}
