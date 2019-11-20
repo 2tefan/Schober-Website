@@ -1,0 +1,34 @@
+// main: ../main.scss
+
+.banner {
+  display: inline-grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: white;
+  box-shadow: 0 5px 10px 0 black;
+
+  h1,
+  p {
+    text-align: center;
+  }
+}
+@media (min-width: $min-width) {
+  .banner {
+    grid-template-areas: 'headline image' 'description image';
+    grid-template-columns: auto $img-size;
+    grid-template-rows: $img-size/2 auto;
+
+    h1 {
+      text-align: left;
+      grid-area: headline;
+    }
+
+    img {
+      grid-area: image;
+    }
+
+    p {
+      text-align: inherit;
+      grid-area: description;
+    }
+  }
+}

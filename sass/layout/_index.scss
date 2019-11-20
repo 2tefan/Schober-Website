@@ -13,6 +13,15 @@ h1 {
   box-shadow: 0 5px 10px 0 black;
 }
 
+#gitlab {
+  background-color: $amberColor;
+
+  h1 {
+    color: $nearlyWhite;
+  }
+  box-shadow: 0 5px 10px 0 black;
+}
+
 #discord {
   text-align: center;
 }
@@ -38,30 +47,9 @@ h1 {
 .textRight {
   text-align: center;
 }
-
 @media (min-width: $min-width) {
-  h1{
+  h1 {
     text-align: inherit;
-  }
-  .imgLeft {
-    float: left;
-  }
-
-  .imgRight {
-    float: right;
-  }
-
-  .imgLeft,
-  .imgRight {
-    margin-top: -60px;
-  }
-
-  .textRight {
-    text-align: right;
-  }
-
-  .textLeft {
-    text-align: left;
   }
 }
 @media (min-width: $tablet-size) {
