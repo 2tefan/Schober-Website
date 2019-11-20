@@ -1,0 +1,9 @@
+// main: ../main.scss
+
+img {
+  max-width: $img-size;
+  max-height: $img-size;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

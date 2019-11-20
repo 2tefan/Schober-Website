@@ -1,0 +1,48 @@
+// main: ../main.scss
+
+.card,
+.card--withouticon {
+  display: inline-grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: white;
+  padding: 5px 35px 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px 0 black;
+  grid-gap: 10px;
+
+  a:visited {
+    color: $nearlyWhite;
+  }
+}
+
+.header {
+  text-align: center;
+}
+@media (min-width: $min-width) {
+  .card {
+    grid-template-areas: 'headline headline image' 'text text text' 'button . .';
+    grid-template-columns: 250px auto $img-size;
+  }
+
+  .card--withouticon {
+    grid-template-areas: 'headline headline headline' 'text text button';
+    grid-template-columns: 250px auto 250px;
+  }
+
+  .header {
+    text-align: left;
+    grid-area: headline;
+  }
+
+  .btn {
+    grid-area: button;
+  }
+
+  .icon {
+    grid-area: image;
+  }
+
+  p {
+    grid-area: text;
+  }
+}
