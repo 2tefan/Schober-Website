@@ -21,34 +21,34 @@
 
 .navbarAniOpen {
   -webkit-animation-name: slideNavbarOpen;
-  -webkit-animation-duration: .5s;
+  -webkit-animation-duration: 0.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes slideNavbarOpen {
   from {
-    transform: translateY(217px-61px);
+    transform: translateY(0);
   }
 
   to {
-    transform: translateY(0px);
+    transform: translateY(-156px);
   }
 }
 
 .navbarAniClose {
   -webkit-animation-name: slideNavbarClose;
-  -webkit-animation-duration: .5s;
+  -webkit-animation-duration: 0.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes slideNavbarClose {
   from {
-    transform: translateY(0px);
+    transform: translateY(-156px);
   }
 
   to {
-    transform: translateY(217px-61px);
+    transform: translateY(0);
   }
 }

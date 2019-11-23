@@ -2,8 +2,9 @@
 @import '../utilities/_variables';
 
 #myNavbar {
-  bottom: 0;
+  bottom: -156px;
   position: fixed;
+  height: 217px;
   width: 100%;
 
   ul {
@@ -40,6 +41,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
+    height: 41px;
     display: inline-block;
     color: #fff;
     background: $darkerAmberColor;
@@ -69,14 +71,14 @@
 }
 
 #navbarLinks {
-  transform: translateY(156px);
+  transform: translateY(0px);
 }
 @media (min-width: $min-width) {
   #myNavbar {
-    top: 0;
+  height: 100px;
+    top: -61px;
     bottom: inherit;
     background-color: $notJustGreyColor;
-    transform: translateY(-61px);
 
     li {
       display: inline-block;
@@ -85,9 +87,5 @@
     label {
       display: none;
     }
-  }
-
-  #navbarLinks {
-    transform: translateY(0);
   }
 }
