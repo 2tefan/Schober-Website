@@ -2,13 +2,11 @@
 @import '../utilities/_variables';
 
 #myNavbar {
-  top: 0;
+  bottom: 0;
   position: fixed;
   width: 100%;
-  background-color: $notJustGreyColor;
 
   ul {
-    height: 39px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -18,6 +16,7 @@
   li {
     display: block;
     background-color: $notJustGreyColor;
+    height: 39px;
 
     a {
       display: block;
@@ -36,54 +35,59 @@
       }
     }
   }
-
   //The hamburger button
   label {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     display: inline-block;
     color: #fff;
     background: $darkerAmberColor;
     font-style: normal;
     font-size: 28px;
     padding: 10px 18px;
-    z-index: 5;
   }
-
-  //Not displaying the menu
-  ul {
-    display: none;
-  }
-
   //Displaying the menu
-  input:checked ~ ul {
+  ul {
     display: block;
   }
-
   //Removing the checkbox
   input {
     display: none;
   }
-
   //Centering the title
   p {
+    padding: 8px 0;
     font-size: 30px;
-    margin: -55px 0 10px;
+    bottom: 0;
+    margin: 0;
     display: inherit;
     text-align: center;
     color: $nearlyWhite;
+    background-color: $notJustGreyColor;
   }
+}
+
+#navbarLinks {
+  transform: translateY(156px);
 }
 @media (min-width: $min-width) {
   #myNavbar {
+    top: 0;
+    bottom: inherit;
+    background-color: $notJustGreyColor;
+    transform: translateY(-61px);
+
     li {
       display: inline-block;
-    }
-
-    ul {
-      display: block;
     }
 
     label {
       display: none;
     }
+  }
+
+  #navbarLinks {
+    transform: translateY(0);
   }
 }
