@@ -18,15 +18,17 @@
 .header {
   text-align: center;
 }
-@media (min-width: $min-width) {
+@media (min-width: 610px) {
   .card {
-    grid-template-areas: 'headline headline image' 'text text text' 'button . .';
-    grid-template-columns: 250px auto $img-size;
+    grid-template-areas: 'headline headline image' 'text text image' 'button . .';
+    grid-template-columns: 250px auto $img-size+8px;
+    grid-template-rows: $img-size/2 auto 50px;
   }
 
   .card--withouticon {
-    grid-template-areas: 'headline headline headline' 'text text button';
-    grid-template-columns: 250px auto 250px;
+    grid-template-areas: 'headline headline' 'text text' 'button .';
+    grid-template-columns: 250px auto;
+    grid-template-rows: $img-size/2 auto 50px;
   }
 
   .header {
