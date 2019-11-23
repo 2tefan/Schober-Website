@@ -5,21 +5,15 @@ h1 {
 }
 
 #github {
-  background-color: $goodBlueColor;
-
-  h1 {
-    color: $nearlyWhite;
-  }
-  box-shadow: 0 5px 10px 0 black;
+  background-color: $darkerBlueColor;
 }
 
 #gitlab {
-  background-color: $amberColor;
+  background-color: $darkerAmberColor;
+}
 
-  h1 {
-    color: $nearlyWhite;
-  }
-  box-shadow: 0 5px 10px 0 black;
+#steam {
+  background-color: $greyColor;
 }
 
 #discord {
