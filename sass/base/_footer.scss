@@ -3,9 +3,16 @@
 @import '../utilities/colors';
 
 footer p {
-	margin: 0;
+	margin: 0 0 61px;
 	padding: 1cm;
 	background-color: $notJustGreyColor;
 	color: white;
 	text-align: center;
+}
+
+
+@media (min-width: $min-width) {
+	footer p {
+		margin: 0;
+	}
 }
