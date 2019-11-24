@@ -1,8 +1,27 @@
 // main: ../main.scss
+@import '../utilities/_variables';
 
 .icon {
   outline-style: dashed;
   outline-width: 4px;
   outline-color: $greyieBlueColor;
-  margin: 30px auto;
+}
+
+.creativecommons {
+  margin-top: 20px;
+
+  a:visited {
+    color: $darkerBlueColor;
+  }
+
+  img {
+    margin-left: auto;
+  }
+}
+@media (min-width: $min-width) {
+  .creativecommons {
+    img {
+      margin-left: inherit;
+    }
+  }
 }
