@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Schober</title>
 
-<head>
-	<title>Schober</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4285f4" />
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="theme-color" content="#4285f4" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="src/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="icon" href="src/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+  </head>
 
-	<script src="scripts/scripts.js" type="text/javascript"></script>
-</head>
+  <body>
+    <!--#include virtual="html/elements/navbar.html" -->
 
-<body>
-	<!--#include virtual="html/elements/navbar.html" -->
+    <main>
+      <div class="text" id="introduction">
+        <h1>Startseite</h1>
+        <p>
+          Willkommen auf <span style="font-size: 25px;">schober.space!</span>
+          <br />
+          Alle Programme und alles Andere kannst du unter Downloads finden.
+        </p>
+      </div>
 
-	<main>
-		<div class="text" id="introduction">
-			<h1>Startseite</h1>
-			<p>
-				Willkommen auf <span style="font-size: 25px;">schober.space!</span> <br>
-				Alle Programme und alles Andere kannst du unter Downloads finden.
-			</p>
-		</div>
+      <div class="bannerlist">
+        <section class="text banner" id="github">
+          <h1>Mein Github Profil</h1>
+          <a href="https://github.com/2tefan" class="imageAnchor"
+            ><img src="src/github.svg"
+          /></a>
+          <p>Ja, ich benutze auch Github. Hier ist mein Profil.</p>
+        </section>
 
-		<div class="bannerlist">
+        <section class="text banner" id="gitlab">
+          <h1>Mein GitLab Profil</h1>
+          <a href="https://gitlab.com/2tefan" class="imageAnchor"
+            ><img src="src/gitlab.svg"
+          /></a>
+          <p>
+            Ich werde aber wahrscheinlich auf GitLab umsteigen... <br />Deshalb
+            ist hier schon einmal der Link.
+          </p>
+        </section>
 
-			<section class="text banner" id="github">
-				<h1>Mein Github Profil</h1>
-				<a href="https://github.com/2tefan" class="imageAnchor"><img src="src/github.svg"></a>
-				<p>Ja, ich benutze auch Github. Hier ist mein Profil.</p>
-			</section>
+        <section class="text banner" id="steam">
+          <h1>Mein Steam Profil</h1>
+          <a
+            href="https://steamcommunity.com/profiles/76561198132008497"
+            class="imageAnchor"
+            ><img src="src/steam.svg"
+          /></a>
+          <p>Das ist mein Steam Profil :)</p>
+        </section>
+      </div>
 
-			<section class="text banner" id="gitlab">
-				<h1>Mein GitLab Profil</h1>
-				<a href="https://gitlab.com/2tefan" class="imageAnchor"><img src="src/gitlab.svg"></a>
-				<p>Ich werde aber wahrscheinlich auf GitLab umsteigen... <br>Deshalb ist hier schon einmal der Link.</p>
-			</section>
-
-			<section class="text banner" id="steam">
-				<h1>Mein Steam Profil</h1>
-				<a href="https://steamcommunity.com/profiles/76561198132008497" class="imageAnchor"><img src="src/steam.svg"></a>
-				<p>Das ist mein Steam Profil :)</p>
-			</section>
-		</div>
-
-		<div class="text" id="discord">
-			<h1>Der Discord-Server</h1>
-			<p>
-				Hier kannst du dem Server beitreten <a href="https://discord.gg/zNKuN3J">https://discord.gg/zNKuN3J</a>
-			</p>
-			<iframe id="discordIframe" src="https://discordapp.com/widget?id=557631195819671562&theme=dark" allowtransparency="true" frameborder="0"></iframe>
-		</div>
-
-
-
-	</main>
-	<footer id="footer">
-		<!--#include virtual="html/elements/footer.html" -->
-	</footer>
-</body>
-
+      <div class="text" id="discord">
+        <h1>Der Discord-Server</h1>
+        <p>
+          Hier kannst du dem Server beitreten
+          <a href="https://discord.gg/zNKuN3J">https://discord.gg/zNKuN3J</a>
+        </p>
+        <iframe
+          id="discordIframe"
+          src="https://discordapp.com/widget?id=557631195819671562&theme=dark"
+          allowtransparency="true"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </main>
+    <!--#include virtual="html/elements/footer.html" -->
+  </body>
 </html>

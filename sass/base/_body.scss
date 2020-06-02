@@ -1,48 +1,49 @@
 // main: ../main.scss
-@import '../utilities/variables.scss';
-@import '../utilities/colors.scss';
+@import "../utilities/variables.scss";
+@import "../utilities/colors.scss";
 
 body {
-	font-family: 'Oswald', sans-serif;
-	padding: 0;
-	margin: 0;
-	font-size: 120%;
-	background-color: $notSoNearlyWhite;
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 120%;
+  background-color: $notSoNearlyWhite;
 }
 
 main {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-	color: $goodBlueColor;
+  color: $goodBlueColor;
 }
 
 article {
-	h1 {
-		font-size: 200%;
-	}
+  h1 {
+    font-size: 200%;
+  }
 }
 
 h2 {
-	color: $greyieBlueColor;
+  color: $greyieBlueColor;
 }
 
 a {
-	&:focus {
-		outline-style: dashed;
-		outline-color: $amberColor;
-		outline-width: 3px;
-	}
+  &:focus {
+    outline-style: dashed;
+    outline-color: $amberColor;
+    outline-width: 3px;
+  }
 
-	&:visited {
-		text-decoration: none;
-		color: black;
-	}
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
 }
+
 @media (min-width: $min-width) {
-	main {
-		margin: 39px 0 0;
-	}
+  main {
+    margin: $navbar-normal-height 0 0;
+  }
 }

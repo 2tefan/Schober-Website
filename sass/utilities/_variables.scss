@@ -1,5 +1,17 @@
 // main: ../main.scss
 
+// General
 $img-size: 120px;
 $tablet-size: 1500px;
 $min-width: 500px;
+
+// Navbar
+$hamburger_height_calc: 41;
+$hamburger_padding_calc: 10;
+$navbar-collapsed-height_calc: $hamburger_height_calc * 2 * $hamburger_padding_calc;
+
+$hamburger_height: $hamburger_height_calc + px;
+$hamburger_padding: $hamburger_padding_calc + px;
+$navbar-collapsed-height: $navbar-collapsed-height_calc + px;
+
+$navbar-normal-height: 39px;

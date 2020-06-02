@@ -3,7 +3,7 @@
 @import '../utilities/colors';
 
 footer p {
-	margin: 0 0 61px;
+	margin: 0 0 $navbar-collapsed-height;
 	padding: 1cm;
 	background-color: $notJustGreyColor;
 	color: white;

@@ -8,7 +8,7 @@
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 }
-@-webkit-keyframes rotateImg {
+@keyframes rotateImg {
   from {
     -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0);
   }
@@ -26,7 +26,7 @@
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 }
-@-webkit-keyframes slideNavbarOpen {
+@keyframes slideNavbarOpen {
   from {
     transform: translateY(0);
   }
@@ -43,7 +43,8 @@
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 }
-@-webkit-keyframes slideNavbarClose {
+
+@keyframes slideNavbarClose {
   from {
     transform: translateY(-156px);
   }

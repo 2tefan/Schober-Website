@@ -1,10 +1,9 @@
 // main: ../main.scss
-@import '../utilities/_variables';
+@import "../utilities/_variables";
 
 #myNavbar {
   bottom: -156px;
   position: fixed;
-  height: 217px;
   width: 100%;
   z-index: 10;
 
@@ -42,22 +41,24 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 41px;
+    height: $hamburger_height;
     display: inline-block;
     color: #fff;
     background: $darkerAmberColor;
     font-style: normal;
     font-size: 28px;
-    padding: 10px 18px;
+    padding: $hamburger_padding 18px;
   }
   //Displaying the menu
   ul {
     display: block;
   }
+
   //Removing the checkbox
   input {
     display: none;
   }
+
   //Centering the title
   p {
     padding: 8px 0;
@@ -74,18 +75,18 @@
 #navbarLinks {
   transform: translateY(0px);
 }
+
 @media (min-width: $min-width) {
   #myNavbar {
-  height: 100px;
-    top: -61px;
-    bottom: inherit;
+    top: 0;
+    height: $navbar-normal-height;
     background-color: $notJustGreyColor;
 
     li {
       display: inline-block;
     }
 
-    label {
+    label, p {
       display: none;
     }
   }

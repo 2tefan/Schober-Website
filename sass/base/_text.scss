@@ -1,30 +1,30 @@
 // main: ../main.scss
 @import '../utilities/_variables';
 
+$text_padding: 20px;
+
 h1 {
 	margin-block-start: 0;
 	margin-block-end: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: $text_padding/2 0;
 }
 
 .text {
-	padding: 20px 5%;
+	padding: $text_padding 5%;
 	overflow: hidden;
 }
 
 a {
 	text-decoration: none;
 }
+
 @media (min-width: $min-width) {
 	.text {
-		padding-left: 10%;
-		padding-right: 10%;
+		padding: $text_padding 10%;
 	}
 }
 @media (min-width: $tablet-size) {
 	.text {
-		padding-left: 25%;
-		padding-right: 25%;
+		padding: $text_padding 25%;
 	}
 }
