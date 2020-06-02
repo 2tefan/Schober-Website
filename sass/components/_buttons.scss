@@ -1,5 +1,5 @@
 // main: ../main.scss
-@import '../utilities/_variables';
+@import "../utilities/_variables";
 
 .btn {
   background-color: $goodBlueColor;
@@ -28,5 +28,15 @@
 @media (min-width: $min-width) {
   .btn {
     margin-top: 0px;
+  }
+}
+
+.btnArea {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }

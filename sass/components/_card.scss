@@ -31,21 +31,21 @@
   }
 
   .card {
-    grid-template-areas: 'headline headline image' 'text text image' 'button . .';
-    grid-template-columns: 250px auto $img-size+8px;
+    grid-template-areas: "headline headline image" "text text image" "button button button";
+    grid-template-columns: 250px auto $img-size + 8px;
     grid-template-rows: $img-size/2 auto 50px;
   }
 
   .card--withouticon {
-    grid-template-areas: 'headline headline' 'text text' 'button .';
+    grid-template-areas: "headline headline" "text text" "button .";
     grid-template-columns: 250px auto;
     grid-template-rows: $img-size/2 auto 50px;
   }
 
   .card--3dmodels {
-    grid-template-areas: 'headline headline image' 'button-left button-middle button-right' 'cc cc cc';
-    grid-template-columns: auto auto $img-size+8px;
-    grid-template-rows: $img-size+8px 50px auto;
+    grid-template-areas: "headline headline image" "text text image" "cc cc cc" "buttonArea buttonArea buttonArea";
+    grid-template-columns: 250px auto $img-size + 8px;
+    grid-template-rows: $img-size/2 auto + 8px auto 50px;
   }
 
   .header {
@@ -69,15 +69,7 @@
     grid-area: cc;
   }
 
-  #btnLeft {
-    grid-area: button-left;
-  }
-
-  #btnMiddle {
-    grid-area: button-middle;
-  }
-
-  #btnRight {
-    grid-area: button-right;
+  .btnArea {
+    grid-area: buttonArea;
   }
 }

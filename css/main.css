@@ -210,6 +210,20 @@ a {
   }
 }
 
+.btnArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnArea .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 img {
   max-width: 120px;
   max-height: 120px;
@@ -256,25 +270,25 @@ img {
     grid-gap: 10px;
   }
   .card {
-        grid-template-areas: 'headline headline image' 'text text image' 'button . .';
+        grid-template-areas: "headline headline image" "text text image" "button button button";
     -ms-grid-columns: 250px auto 128px;
         grid-template-columns: 250px auto 128px;
     -ms-grid-rows: 60px auto 50px;
         grid-template-rows: 60px auto 50px;
   }
   .card--withouticon {
-        grid-template-areas: 'headline headline' 'text text' 'button .';
+        grid-template-areas: "headline headline" "text text" "button .";
     -ms-grid-columns: 250px auto;
         grid-template-columns: 250px auto;
     -ms-grid-rows: 60px auto 50px;
         grid-template-rows: 60px auto 50px;
   }
   .card--3dmodels {
-        grid-template-areas: 'headline headline image' 'button-left button-middle button-right' 'cc cc cc';
-    -ms-grid-columns: auto auto 128px;
-        grid-template-columns: auto auto 128px;
-    -ms-grid-rows: 128px 50px auto;
-        grid-template-rows: 128px 50px auto;
+        grid-template-areas: "headline headline image" "text text image" "cc cc cc" "buttonArea buttonArea buttonArea";
+    -ms-grid-columns: 250px auto 128px;
+        grid-template-columns: 250px auto 128px;
+    -ms-grid-rows: 60px auto8px auto 50px;
+        grid-template-rows: 60px auto8px auto 50px;
   }
   .header {
     text-align: left;
@@ -290,6 +304,7 @@ img {
   }
   .icon {
     -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 3;
     grid-area: image;
   }
@@ -305,20 +320,11 @@ img {
     -ms-grid-column-span: 3;
     grid-area: cc;
   }
-  #btnLeft {
-    -ms-grid-row: 2;
+  .btnArea {
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
-    grid-area: button-left;
-  }
-  #btnMiddle {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: button-middle;
-  }
-  #btnRight {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: button-right;
+    -ms-grid-column-span: 3;
+    grid-area: buttonArea;
   }
 }
 
