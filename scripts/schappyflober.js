@@ -1,34 +1,34 @@
 var player;
 var obstacles = [];
 
-document.addEventListener('keydown', function (event) {
-    if (event.keyCode == 32) {
+document.addEventListener('keydown', function(event) {
+    if (event.key == " ") { //space
         moveup();
     }
 });
-document.addEventListener('keyup', function (event) {
-    if (event.keyCode == 32) {
+document.addEventListener('keyup', function(event) {
+    if (event.key == " ") { //space
         stopMove();
     }
 });
 
-document.addEventListener('mousedown', function (event) {
+document.addEventListener('mousedown', function(event) {
     moveup();
 });
 
-document.addEventListener('mouseup', function (event) {
+document.addEventListener('mouseup', function(event) {
     stopMove();
 });
 
-document.addEventListener('touchstart', function (event) {
+document.addEventListener('touchstart', function(event) {
     moveup();
 });
 
-document.addEventListener('touchcancel', function (event) {
+document.addEventListener('touchcancel', function(event) {
     stopMove();
 });
 
-document.addEventListener('touchend', function (event) {
+document.addEventListener('touchend', function(event) {
     stopMove();
 });
 
@@ -114,7 +114,7 @@ function gameOver() {
     document.body.insertBefore(button, document.body.firstChild);
 
     // 3. Add event handler
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function() {
         startGame();
         var elem = document.getElementById("restartButton");
         elem.remove();
@@ -125,21 +125,21 @@ function gameOver() {
 
 var myGameArea = {
     canvas: document.createElement("canvas"),
-    start: function () {
+    start: function() {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
-        this.interval = setInterval(redraw, 20);
+        this.interval = setInterval(redraw, 15);
     },
-    clear: function () {
+    clear: function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
-    stop: function () {
+    stop: function() {
         clearInterval(this.interval);
     },
-    draw: function () {
+    draw: function() {
         this.context.moveTo(0, 0);
         this.context.lineTo(this.canvas.width, this.canvas.height);
         this.context.stroke();
@@ -147,7 +147,7 @@ var myGameArea = {
         this.context.lineTo(0, this.canvas.height);
         this.context.stroke();
     }
-}
+};
 
 function component(width, height, color, x, y) {
     this.width = width;
@@ -159,12 +159,12 @@ function component(width, height, color, x, y) {
     this.gravity = 0.05;
     this.gravitySpeed = 0;
 
-    this.redraw = function () {
+    this.redraw = function() {
         ctx = myGameArea.context;
         ctx.fillStyle = color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
-    }
-    this.crashWith = function (otherobj) {
+    };
+    this.crashWith = function(otherobj) {
         var myleft = this.x;
         var myright = this.x + (this.width);
         var mytop = this.y;
@@ -181,11 +181,11 @@ function component(width, height, color, x, y) {
             crash = false;
         }
         return crash;
-    }
-    this.newPos = function () {
+    };
+    this.newPos = function() {
         this.gravitySpeed += this.gravity;
         this.y += this.gravitySpeed;
-    }
+    };
 }
 
 function everyinterval(n) {
@@ -206,3 +206,4 @@ function stopMove() {
 function accelerate(n) {
     player.gravity = n;
 }
+//https://github.com/2tefan/Schober-Website.git
