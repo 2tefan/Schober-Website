@@ -1,5 +1,6 @@
 var player;
 var obstacles = [];
+var score;
 
 document.addEventListener('keydown', function(event) {
     if (event.key == " ") { //space
@@ -34,6 +35,7 @@ document.addEventListener('touchend', function(event) {
 
 function startGame() {
     resizedWindow();
+    score = 0;
 }
 
 function resizedWindow() {
@@ -95,6 +97,8 @@ function redraw() {
         console.log(obstacles[0].x);
         obstacles.shift();
         obstacles.shift();
+        score++;
+
     }
 
 
@@ -132,12 +136,15 @@ var myGameArea = {
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(redraw, 15);
+        score = 0;
+        document.cookie = "score=0";
     },
     clear: function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
     stop: function() {
         clearInterval(this.interval);
+        document.cookie = "score=" + score;
     },
     draw: function() {
         this.context.moveTo(0, 0);
@@ -146,6 +153,7 @@ var myGameArea = {
         this.context.moveTo(this.canvas.width, 0);
         this.context.lineTo(0, this.canvas.height);
         this.context.stroke();
+
     }
 };
 
@@ -163,6 +171,11 @@ function component(width, height, color, x, y) {
         ctx = myGameArea.context;
         ctx.fillStyle = color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.font = "5em Arial";
+        var x = myGameArea.canvas.width / 2;
+        var y = myGameArea.canvas.height / 5;
+        console.log(x + ":" + y);
+        ctx.fillText(score, x, y);
     };
     this.crashWith = function(otherobj) {
         var myleft = this.x;
