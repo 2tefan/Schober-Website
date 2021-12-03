@@ -366,7 +366,7 @@ img {
 
 @media (min-width: 500px) {
   .banner {
-        grid-template-areas: 'headline image' 'description image';
+        grid-template-areas: "headline image" "description image";
     -ms-grid-columns: auto 120px;
         grid-template-columns: auto 120px;
     -ms-grid-rows: 60px auto;
@@ -378,11 +378,17 @@ img {
     -ms-grid-column: 1;
     grid-area: headline;
   }
-  .banner img {
+  .banner .imageAnchor {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: image;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .banner .imageAnchor img {
+    margin: auto 0;
   }
   .banner p {
     text-align: inherit;
@@ -412,8 +418,12 @@ h1 {
   background-color: #cf7917;
 }
 
-#steam {
-  background-color: #999999;
+#codeberg {
+  background-color: #EFF0F2;
+}
+
+#codeberg h1 {
+  color: #2A3132;
 }
 
 #discord {

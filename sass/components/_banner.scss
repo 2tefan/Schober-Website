@@ -17,7 +17,7 @@
 }
 @media (min-width: $min-width) {
   .banner {
-    grid-template-areas: 'headline image' 'description image';
+    grid-template-areas: "headline image" "description image";
     grid-template-columns: auto $img-size;
     grid-template-rows: $img-size/2 auto;
 
@@ -26,8 +26,13 @@
       grid-area: headline;
     }
 
-    img {
+    .imageAnchor {
       grid-area: image;
+      display: flex;
+
+      img {
+        margin: auto 0;
+      }
     }
 
     p {
