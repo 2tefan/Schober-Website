@@ -261,7 +261,7 @@ img {
 
 @media (min-width: 610px) {
   .card {
-        grid-template-areas: "headline image" "text text" "button button";
+        grid-template-areas: "headline image" "text text" "buttonArea buttonArea";
     -ms-grid-columns: autos 128px;
         grid-template-columns: autos 128px;
     -ms-grid-rows: 120px auto 50px;
@@ -288,9 +288,6 @@ img {
   }
   .card .btn,
   .card--3d-models .btn {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: button;
   }
   .card .icon,

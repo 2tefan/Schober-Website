@@ -23,7 +23,7 @@
 
 @media (min-width: 610px) {
   .card {
-    grid-template-areas: "headline image" "text text" "button button";
+    grid-template-areas: "headline image" "text text" "buttonArea buttonArea";
     grid-template-columns: autos $img-size + 8px;
     grid-template-rows: $img-size auto 50px;
   }
