@@ -7,9 +7,15 @@
   grid-column-gap: 30px;
 }
 
-@media (min-width: $tablet-size) {
+@media (min-width: 800px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .grid-container {
     padding: 70px;
   }
 }

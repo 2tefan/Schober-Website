@@ -11,35 +11,21 @@
   box-shadow: 0 5px 10px 0 black;
   grid-gap: 30px;
 
+  .header {
+    margin: auto 0;
+    text-align: center;
+  }
+
   a:visited {
     color: $nearlyWhite;
   }
-
-  .header {
-    margin: 0;
-  }
 }
 
-.header {
-  text-align: center;
-}
 @media (min-width: 610px) {
-  .card,
-  .card--3d-models,
-  .card--withouticon {
-    grid-gap: 10px;
-  }
-
   .card {
-    grid-template-areas: "headline headline image" "text text image" "button button button";
-    grid-template-columns: 250px auto $img-size + 8px;
-    grid-template-rows: $img-size/2 auto 50px;
-  }
-
-  .card--withouticon {
-    grid-template-areas: "headline headline" "text text" "button .";
-    grid-template-columns: 250px auto;
-    grid-template-rows: $img-size/2 auto 50px;
+    grid-template-areas: "headline image" "text text" "button button";
+    grid-template-columns: autos $img-size + 8px;
+    grid-template-rows: $img-size auto 50px;
   }
 
   .card--3d-models {
@@ -48,28 +34,33 @@
     grid-template-rows: $img-size/2 auto + 8px auto 50px;
   }
 
-  .header {
-    text-align: left;
-    grid-area: headline;
-  }
+  .card,
+  .card--3d-models {
+    grid-gap: 10px;
 
-  .btn {
-    grid-area: button;
-  }
+    .header {
+      text-align: left;
+      grid-area: headline;
+    }
 
-  .icon {
-    grid-area: image;
-  }
+    .btn {
+      grid-area: button;
+    }
 
-  p {
-    grid-area: text;
-  }
+    .icon {
+      grid-area: image;
+    }
 
-  .creativecommons {
-    grid-area: cc;
-  }
+    p {
+      grid-area: text;
+    }
 
-  .btnArea {
-    grid-area: buttonArea;
+    .creativecommons {
+      grid-area: cc;
+    }
+
+    .btnArea {
+      grid-area: buttonArea;
+    }
   }
 }

@@ -246,41 +246,26 @@ img {
   grid-gap: 30px;
 }
 
+.card .header,
+.card--3d-models .header,
+.card--withouticon .header {
+  margin: auto 0;
+  text-align: center;
+}
+
 .card a:visited,
 .card--3d-models a:visited,
 .card--withouticon a:visited {
   color: #FEFEFE;
 }
 
-.card .header,
-.card--3d-models .header,
-.card--withouticon .header {
-  margin: 0;
-}
-
-.header {
-  text-align: center;
-}
-
 @media (min-width: 610px) {
-  .card,
-  .card--3d-models,
-  .card--withouticon {
-    grid-gap: 10px;
-  }
   .card {
-        grid-template-areas: "headline headline image" "text text image" "button button button";
-    -ms-grid-columns: 250px auto 128px;
-        grid-template-columns: 250px auto 128px;
-    -ms-grid-rows: 60px auto 50px;
-        grid-template-rows: 60px auto 50px;
-  }
-  .card--withouticon {
-        grid-template-areas: "headline headline" "text text" "button .";
-    -ms-grid-columns: 250px auto;
-        grid-template-columns: 250px auto;
-    -ms-grid-rows: 60px auto 50px;
-        grid-template-rows: 60px auto 50px;
+        grid-template-areas: "headline image" "text text" "button button";
+    -ms-grid-columns: autos 128px;
+        grid-template-columns: autos 128px;
+    -ms-grid-rows: 120px auto 50px;
+        grid-template-rows: 120px auto 50px;
   }
   .card--3d-models {
         grid-template-areas: "headline headline image" "text text image" "cc cc cc" "buttonArea buttonArea buttonArea";
@@ -289,37 +274,48 @@ img {
     -ms-grid-rows: 60px auto8px auto 50px;
         grid-template-rows: 60px auto8px auto 50px;
   }
-  .header {
+  .card,
+  .card--3d-models {
+    grid-gap: 10px;
+  }
+  .card .header,
+  .card--3d-models .header {
     text-align: left;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: headline;
   }
-  .btn {
+  .card .btn,
+  .card--3d-models .btn {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: button;
   }
-  .icon {
+  .card .icon,
+  .card--3d-models .icon {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 3;
     grid-area: image;
   }
-  p {
+  .card p,
+  .card--3d-models p {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: text;
   }
-  .creativecommons {
+  .card .creativecommons,
+  .card--3d-models .creativecommons {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: cc;
   }
-  .btnArea {
+  .card .btnArea,
+  .card--3d-models .btnArea {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -336,10 +332,16 @@ img {
   grid-column-gap: 30px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 800px) {
   .grid-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .grid-container {
     padding: 70px;
   }
 }
