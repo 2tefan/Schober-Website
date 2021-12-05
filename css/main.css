@@ -161,6 +161,10 @@ h1 {
   overflow: hidden;
 }
 
+.secret-text {
+  opacity: 0.01;
+}
+
 a {
   text-decoration: none;
 }
