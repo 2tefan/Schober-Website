@@ -15,6 +15,7 @@
     color: $nearlyWhite;
   }
 }
+
 @media (min-width: $min-width) {
   .banner {
     grid-template-areas: "headline image" "description image";

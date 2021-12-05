@@ -49,6 +49,11 @@
     font-size: 28px;
     padding: $hamburger_padding 18px;
   }
+
+  .noselect {
+    user-select: none;
+  }
+
   //Displaying the menu
   ul {
     display: block;
@@ -86,7 +91,8 @@
       display: inline-block;
     }
 
-    label, p {
+    label,
+    p {
       display: none;
     }
   }
