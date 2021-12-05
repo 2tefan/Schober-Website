@@ -40,7 +40,7 @@ a:visited {
 }
 
 footer p {
-  margin: 0 0 820px;
+  margin: 0 0 44px;
   padding: 1cm;
   background-color: #2A3132;
   color: white;
@@ -54,13 +54,14 @@ footer p {
 }
 
 #myNavbar {
-  bottom: -156px;
+  bottom: -117px;
   position: fixed;
   width: 100%;
   z-index: 20;
 }
 
 #myNavbar ul {
+  display: block;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -93,7 +94,7 @@ footer p {
   position: fixed;
   bottom: 0;
   right: 0;
-  height: 41px;
+  height: 40px;
   display: inline-block;
   color: #fff;
   background: #cf7917;
@@ -109,15 +110,12 @@ footer p {
           user-select: none;
 }
 
-#myNavbar ul {
-  display: block;
-}
-
 #myNavbar input {
   display: none;
 }
 
 #myNavbar p {
+  height: 44px;
   padding: 8px 0;
   font-size: 30px;
   bottom: 0;
@@ -770,8 +768,8 @@ h1 {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-156px);
-            transform: translateY(-156px);
+    -webkit-transform: translateY(-117px);
+            transform: translateY(-117px);
   }
 }
 
@@ -781,8 +779,8 @@ h1 {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-156px);
-            transform: translateY(-156px);
+    -webkit-transform: translateY(-117px);
+            transform: translateY(-117px);
   }
 }
 
@@ -796,8 +794,8 @@ h1 {
 
 @-webkit-keyframes slideNavbarClose {
   from {
-    -webkit-transform: translateY(-156px);
-            transform: translateY(-156px);
+    -webkit-transform: translateY(-117px);
+            transform: translateY(-117px);
   }
   to {
     -webkit-transform: translateY(0);
@@ -807,8 +805,8 @@ h1 {
 
 @keyframes slideNavbarClose {
   from {
-    -webkit-transform: translateY(-156px);
-            transform: translateY(-156px);
+    -webkit-transform: translateY(-117px);
+            transform: translateY(-117px);
   }
   to {
     -webkit-transform: translateY(0);

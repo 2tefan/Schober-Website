@@ -32,7 +32,7 @@
   }
 
   to {
-    transform: translateY(-156px);
+    transform: translateY($navbar-offset);
   }
 }
 
@@ -46,7 +46,7 @@
 
 @keyframes slideNavbarClose {
   from {
-    transform: translateY(-156px);
+    transform: translateY($navbar-offset);
   }
 
   to {
