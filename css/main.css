@@ -255,12 +255,6 @@ img {
   text-align: center;
 }
 
-.card a:visited,
-.card--3d-models a:visited,
-.card--withouticon a:visited {
-  color: #FEFEFE;
-}
-
 @media (min-width: 610px) {
   .card {
         grid-template-areas: "headline image" "text text" "buttonArea buttonArea";
