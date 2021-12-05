@@ -20,8 +20,8 @@ function whichAnimationEvent() {
 var animationEvent = whichAnimationEvent();
 
 jQuery(document).ready(function ($) {
-  //When a image with the class aniIMG is clicked, it spins and then it gets resetted.
-  $(".aniIMG").on("click", function (e) {
+  //When a image with the class animated-icon is clicked, it spins and then it gets resetted.
+  $(".animated-icon").on("click", function (e) {
     $(this).addClass("rotateAni");
     $(this).one(animationEvent, function (event) {
       $(this).removeClass("rotateAni");
