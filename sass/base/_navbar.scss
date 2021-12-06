@@ -32,7 +32,7 @@
 
       &:active,
       &:hover {
-        background-color: $greyishBlueColor;
+        background-color: $mainColorDark;
         outline-style: none;
         text-decoration: none;
       }
@@ -46,7 +46,6 @@
     height: $hamburger_height;
     display: inline-block;
     color: #fff;
-    background: $darkerAmberColor;
     font-style: normal;
     font-size: 28px;
     padding: $hamburger_padding 18px;

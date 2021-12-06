@@ -2,7 +2,7 @@
 @import "../utilities/_variables";
 
 .btn {
-  background-color: $goodBlueColor;
+  background-color: $mainColor;
   border: none;
   color: white;
   cursor: pointer;
@@ -16,7 +16,7 @@
   white-space: nowrap;
 
   &:hover {
-    background-color: $greyishBlueColor;
+    background-color: $mainColorDark;
     outline: 0;
   }
 

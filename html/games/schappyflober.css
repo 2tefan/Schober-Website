@@ -15,7 +15,7 @@ body {
 }
 
 #restartButton {
-  background-color: $goodBlueColor;
+  background-color: $mainColor;
   height: 10%;
   width: 100%;
   position: absolute;

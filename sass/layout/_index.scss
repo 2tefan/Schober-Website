@@ -5,19 +5,15 @@ h1 {
 }
 
 #github {
-  background-color: $darkerBlueColor;
+  background-color: $mainColorBrighter;
 }
 
 #gitlab {
-  background-color: $darkerAmberColor;
+  background-color: $amberColorDark;
 }
 
 #codeberg {
   background-color: $notSoNearlyWhite;
-
-  h1 {
-    color: $notJustGreyColor;
-  }
 }
 
 #discord {

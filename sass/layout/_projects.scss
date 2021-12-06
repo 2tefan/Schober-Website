@@ -308,14 +308,14 @@
 .icon {
   outline-style: dashed;
   outline-width: 4px;
-  outline-color: $greyishBlueColor;
+  outline-color: $mainColorDark;
 }
 
 .creativecommons {
   margin-top: 20px;
 
   a:visited {
-    color: $darkerBlueColor;
+    color: $mainColorBrighter;
   }
 
   img {
