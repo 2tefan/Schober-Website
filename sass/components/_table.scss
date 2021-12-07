@@ -18,8 +18,12 @@
       background-color: $notSoNearlyWhite;
     }
 
+    tr:nth-child(odd) {
+      background-color: $nearlyWhite;
+    }
+
     tr:hover {
-      background-color: #ddd;
+      background-color: rgba(0, 0, 0, 0.2);
     }
 
     th {
