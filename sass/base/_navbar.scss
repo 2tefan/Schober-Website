@@ -18,7 +18,7 @@
 
   li {
     display: block;
-    background-color: $notJustGreyColor;
+    background-color: $main-1;
     height: $list-item-size;
 
     a {
@@ -32,7 +32,7 @@
 
       &:active,
       &:hover {
-        background-color: $mainColorDark;
+        background-color: $main-1;
         outline-style: none;
         text-decoration: none;
       }
@@ -69,8 +69,8 @@
     margin: 0;
     display: inherit;
     text-align: center;
-    color: $nearlyWhite;
-    background-color: $notJustGreyColor;
+    color: $main-5;
+    background-color: $main-1;
   }
 }
 
@@ -82,7 +82,7 @@
   #myNavbar {
     top: 0;
     height: $navbar-normal-height;
-    background-color: $notJustGreyColor;
+    background-color: $main-1;
 
     li {
       display: inline-block;

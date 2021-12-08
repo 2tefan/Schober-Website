@@ -10,16 +10,16 @@
 
     td,
     th {
-      border: 1px solid $nearlyWhite;
+      border: 1px solid $main-5-1;
       padding: 8px;
     }
 
     tr:nth-child(even) {
-      background-color: $notSoNearlyWhite;
+      background-color: $main-5;
     }
 
     tr:nth-child(odd) {
-      background-color: $nearlyWhite;
+      background-color: $main-5-1;
     }
 
     tr:hover {
@@ -30,11 +30,11 @@
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: $mainAnalogousDarker;
+      background-color: $main-2;
       color: white;
 
       &.th-lvl-2 {
-        background-color: $mainAnalogousDark;
+        background-color: $main-3;
       }
     }
   }
