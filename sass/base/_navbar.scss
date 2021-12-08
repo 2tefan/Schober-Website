@@ -2,12 +2,14 @@
 @import "../utilities/_variables";
 
 #myNavbar {
-  bottom: -156px;
+  bottom: $navbar-offset;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
 
+  //Displaying the menu
   ul {
+    display: block;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -16,8 +18,8 @@
 
   li {
     display: block;
-    background-color: $notJustGreyColor;
-    height: 39px;
+    background-color: $main-1;
+    height: $list-item-size;
 
     a {
       display: block;
@@ -30,7 +32,7 @@
 
       &:active,
       &:hover {
-        background-color: $greyieBlueColor;
+        background-color: $main-1;
         outline-style: none;
         text-decoration: none;
       }
@@ -44,14 +46,13 @@
     height: $hamburger_height;
     display: inline-block;
     color: #fff;
-    background: $darkerAmberColor;
     font-style: normal;
     font-size: 28px;
     padding: $hamburger_padding 18px;
   }
-  //Displaying the menu
-  ul {
-    display: block;
+
+  .noselect {
+    user-select: none;
   }
 
   //Removing the checkbox
@@ -61,14 +62,15 @@
 
   //Centering the title
   p {
-    padding: 8px 0;
+    height: $navbar-title-height;
+    padding: $navbar-title-padding 0;
     font-size: 30px;
     bottom: 0;
     margin: 0;
     display: inherit;
     text-align: center;
-    color: $nearlyWhite;
-    background-color: $notJustGreyColor;
+    color: $main-5;
+    background-color: $main-1;
   }
 }
 
@@ -80,13 +82,14 @@
   #myNavbar {
     top: 0;
     height: $navbar-normal-height;
-    background-color: $notJustGreyColor;
+    background-color: $main-1;
 
     li {
       display: inline-block;
     }
 
-    label, p {
+    label,
+    p {
       display: none;
     }
   }

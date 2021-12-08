@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 120%;
-  background-color: $notSoNearlyWhite;
+  background-color: $main-bg;
 }
 
 main {
@@ -16,7 +16,7 @@ main {
 }
 
 h1 {
-  color: $goodBlueColor;
+  color: $main-1;
 }
 
 article {
@@ -26,19 +26,20 @@ article {
 }
 
 h2 {
-  color: $greyieBlueColor;
+  color: $main-2;
 }
 
 a {
+  color: $main-3;
+
   &:focus {
     outline-style: dashed;
-    outline-color: $amberColor;
+    outline-color: $main-2;
     outline-width: 3px;
   }
 
   &:visited {
     text-decoration: none;
-    color: black;
   }
 }
 

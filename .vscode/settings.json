@@ -1,9 +1,15 @@
 {
     "liveSassCompile.settings.formats": [
         {
-            "format": "expanded",
+            "format": "compressed",
             "extensionName": ".css",
             "savePath": "/css"
         }
+    ],
+    "cSpell.words": [
+        "Codeberg",
+        "Nextcloud",
+        "schober",
+        "Untis"
     ]
 }

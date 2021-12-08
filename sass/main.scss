@@ -3,7 +3,6 @@
 @import 'base/footer';
 @import 'base/navbar';
 @import 'base/text';
-@import 'base/special';
 
 @import 'components/buttons';
 @import 'components/images';
@@ -11,9 +10,10 @@
 @import 'components/grid';
 @import 'components/banner';
 @import 'components/bannerlist';
+@import 'components/table';
 
 @import 'layout/index';
-@import 'layout/downloads';
+@import 'layout/projects';
 
 @import 'utilities/animations';
 @import 'utilities/colors';

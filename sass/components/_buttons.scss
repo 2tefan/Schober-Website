@@ -2,7 +2,7 @@
 @import "../utilities/_variables";
 
 .btn {
-  background-color: $goodBlueColor;
+  background-color: $main-2;
   border: none;
   color: white;
   cursor: pointer;
@@ -16,15 +16,16 @@
   white-space: nowrap;
 
   &:hover {
-    background-color: $greyieBlueColor;
+    background-color: $main-1;
     outline: 0;
   }
 
   &:focus {
-    box-shadow: 0 0 0 10px $amberColor;
+    box-shadow: 0 0 0 5px $main-2;
     outline: 0;
   }
 }
+
 @media (min-width: $min-width) {
   .btn {
     margin-top: 0px;

@@ -1,0 +1,41 @@
+// main: ../main.scss
+
+.table-div {
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    width: 85%;
+    margin: 0 auto;
+
+    td,
+    th {
+      border: 1px solid $main-5-1;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: $main-5;
+    }
+
+    tr:nth-child(odd) {
+      background-color: $main-5-1;
+    }
+
+    tr:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: $main-2;
+      color: white;
+
+      &.th-lvl-2 {
+        background-color: $main-3;
+      }
+    }
+  }
+}

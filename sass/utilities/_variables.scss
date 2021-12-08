@@ -4,14 +4,24 @@
 $img-size: 120px;
 $tablet-size: 1500px;
 $min-width: 500px;
+$num-pages: 5;
 
 // Navbar
-$hamburger_height_calc: 41;
-$hamburger_padding_calc: 10;
-$navbar-collapsed-height_calc: $hamburger_height_calc * 2 * $hamburger_padding_calc;
+$navbar-title-height--calc: 44;
+$navbar-title-padding--calc: 8;
 
-$hamburger_height: $hamburger_height_calc + px;
-$hamburger_padding: $hamburger_padding_calc + px;
-$navbar-collapsed-height: $navbar-collapsed-height_calc + px;
+$hamburger-height--calc: 40;
+$hamburger-padding--calc: 10;
 
-$navbar-normal-height: 39px;
+$list-item-size--calc: 39;
+
+$navbar-offset--calc: -($list-item-size--calc * $num-pages);
+
+$navbar-title-height: $navbar-title-height--calc+px;
+$navbar-title-padding: $navbar-title-padding--calc+px;
+$hamburger_height: $hamburger-height--calc + px;
+$hamburger_padding: $hamburger-padding--calc + px;
+$list-item-size: $list-item-size--calc + px;
+$navbar-offset: $navbar-offset--calc + px;
+
+$navbar-normal-height: $list-item-size--calc + px;
