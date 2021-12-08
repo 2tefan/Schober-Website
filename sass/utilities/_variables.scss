@@ -4,7 +4,7 @@
 $img-size: 120px;
 $tablet-size: 1500px;
 $min-width: 500px;
-$num-pages: 3;
+$num-pages: 5;
 
 // Navbar
 $navbar-title-height--calc: 44;
@@ -24,4 +24,4 @@ $hamburger_padding: $hamburger-padding--calc + px;
 $list-item-size: $list-item-size--calc + px;
 $navbar-offset: $navbar-offset--calc + px;
 
-$navbar-normal-height: 39px;
+$navbar-normal-height: $list-item-size--calc + px;
