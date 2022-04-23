@@ -1,4 +1,5 @@
 // main: ../main.scss
+@import "../utilities/colors.scss";
 @import "../utilities/_variables";
 
 .timeline {
@@ -8,6 +9,7 @@
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
+  color: $main-1;
 }
 
 .timeline:before {
@@ -300,8 +302,6 @@
     z-index: 15;
   }
 }
-
-
 
 .icon {
   outline-style: dashed;
