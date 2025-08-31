@@ -20,7 +20,7 @@
   .banner {
     grid-template-areas: "headline image" "description image";
     grid-template-columns: auto $img-size;
-    grid-template-rows: $img-size/2 auto;
+    grid-template-rows: calc($img-size / 2) auto;
 
     h1 {
       text-align: left;
